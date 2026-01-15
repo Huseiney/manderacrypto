@@ -366,7 +366,7 @@ async function handleRegistrationSubmit(e) {
             // Show success animation
             createConfetti();
             
-            showNotification('Registration successful! Welcome to Mandera Crypto Center!', 'success');
+            showNotification('Registration successful!', 'success');
         } else {
             showNotification('Registration failed. Please try again or contact support.', 'error');
             submitBtn.innerHTML = originalText;
@@ -605,4 +605,5 @@ confettiStyles.textContent = `
 `;
 
 document.head.appendChild(confettiStyles);
+
 
