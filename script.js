@@ -360,7 +360,7 @@ async function handleRegistrationSubmit(e) {
             
             // Set WhatsApp group link (Replace with your actual link)
             if (whatsappLink) {
-                whatsappLink.href = 'https://chat.whatsapp.com/YOUR_GROUP_LINK_HERE';
+                whatsappLink.href = 'https://chat.whatsapp.com/Eg1jmNU4UQa5Oi413mvAIk';
             }
             
             // Show success animation
@@ -605,3 +605,4 @@ confettiStyles.textContent = `
 `;
 
 document.head.appendChild(confettiStyles);
+
