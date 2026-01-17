@@ -90,7 +90,7 @@ const TELEGRAM_CHAT_ID = '7181820663'; // Replace with your chat ID
 
 // Application State
 const APP_STATE = {
-    spotsLeft: 100, // Start with 100 spots
+    spotsLeft: 43, // Start with 100 spots
     theme: localStorage.getItem('theme') || 'dark'
 };
 
@@ -605,5 +605,6 @@ confettiStyles.textContent = `
 `;
 
 document.head.appendChild(confettiStyles);
+
 
 
