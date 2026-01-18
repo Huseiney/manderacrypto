@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 2: Blockchain Magic - Mandera Crypto Center</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body class="light-theme">
+    <button id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <div class="container">
+        <header>
+            <div class="theme-toggle">
+                <button class="toggle-btn" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                    <span>Dark Mode</span>
+                </button>
+            </div>
+            
+            <div class="logo-container">
+                <img src="logo.png" alt="Mandera Crypto Center Logo" class="logo-img">
+                <div class="header-text">
+                    <h1><i class="fas fa-link"></i> Module 2: Blockchain Magic</h1>
+                    <p class="tagline">Demystifying The Digital Ledger Technology</p>
+                </div>
+            </div>
+            
+            <div class="progress-container">
+                <div class="progress-bar"></div>
+            </div>
+        </header>
+
+        <main>
+            <div class="module-header">
+                <h2><i class="fas fa-project-diagram"></i> Understanding Blockchain</h2>
+                <div class="module-meta">
+                    <span><i class="fas fa-book"></i> 4 Essential Topics</span>
+                    <span><i class="fas fa-clock"></i> 50-70 Minutes</span>
+                    <span><i class="fas fa-signal"></i> Foundation Level</span>
+                </div>
+                <p>Blockchain is the revolutionary technology that makes cryptocurrency possible. Let's demystify it through simple analogies and stories - no technical jargon required!</p>
+                <button class="complete-btn" data-module="2">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Mark as Complete</span>
+                </button>
+            </div>
+
+            <!-- Topic 1 -->
+            <div class="topic-card">
+                <div class="topic-number">1</div>
+                <h3>The Community Diary Analogy</h3>
+                <div class="topic-content">
+                    <div class="story-box">
+                        <div class="story-title"><i class="fas fa-book"></i> The Village Record Keeper</div>
+                        <p>Imagine a small village of 100 people. Instead of one person keeping financial records, they have a special diary with these rules:</p>
+                        <ol style="padding-left: 25px; margin-top: 15px;">
+                            <li>Everyone gets an identical copy of the diary</li>
+                            <li>When someone makes a transaction, they announce it to the whole village</li>
+                            <li>The majority must agree the transaction is valid</li>
+                            <li>Once recorded, the entry cannot be erased or changed</li>
+                            <li>Every new page references the previous page's unique fingerprint</li>
+                        </ol>
+                    </div>
+                    
+                    <div class="key-concept">
+                        <h4><i class="fas fa-lightbulb"></i> This is Blockchain!</h4>
+                        <p>The "diary" is the blockchain ledger. The "villagers" are network nodes. The "majority agreement" is consensus. The "page fingerprint" is cryptographic hashing.</p>
+                    </div>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin: 25px 0;">
+                        <div style="text-align: center; padding: 20px; background: rgba(52, 152, 219, 0.1); border-radius: 12px; border: 2px solid var(--primary);">
+                            <i class="fas fa-copy" style="font-size: 2.5rem; color: var(--primary); margin-bottom: 15px;"></i>
+                            <h5>Distributed Ledger</h5>
+                            <p>Everyone has the same copy</p>
+                        </div>
+                        <div style="text-align: center; padding: 20px; background: rgba(46, 204, 113, 0.1); border-radius: 12px; border: 2px solid var(--success);">
+                            <i class="fas fa-check-circle" style="font-size: 2.5rem; color: var(--success); margin-bottom: 15px;"></i>
+                            <h5>Consensus</h5>
+                            <p>Majority agreement required</p>
+                        </div>
+                        <div style="text-align: center; padding: 20px; background: rgba(155, 89, 182, 0.1); border-radius: 12px; border: 2px solid var(--secondary);">
+                            <i class="fas fa-lock" style="font-size: 2.5rem; color: var(--secondary); margin-bottom: 15px;"></i>
+                            <h5>Immutable</h5>
+                            <p>Can't change past entries</p>
+                        </div>
+                        <div style="text-align: center; padding: 20px; background: rgba(241, 196, 15, 0.1); border-radius: 12px; border: 2px solid var(--warning);">
+                            <i class="fas fa-fingerprint" style="font-size: 2.5rem; color: var(--warning); margin-bottom: 15px;"></i>
+                            <h5>Hashed</h5>
+                            <p>Each block has unique fingerprint</p>
+                        </div>
+                    </div>
+                    
+                    <div class="quiz-box">
+                        <h4><i class="fas fa-question-circle"></i> Quick Quiz</h4>
+                        <p>Why can't someone change a transaction that happened last week on the blockchain?</p>
+                        <button class="quiz-btn">
+                            <i class="fas fa-eye"></i>
+                            <span>Show Answer</span>
+                        </button>
+                        <div class="quiz-answer">
+                            <p><strong>Answer:</strong> Because each block contains the fingerprint (hash) of the previous block. Changing one block would change its hash, breaking the chain. You'd need to change ALL subsequent blocks AND convince the majority of the network - practically impossible!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Topic 2 -->
+            <div class="topic-card">
+                <div class="topic-number">2</div>
+                <h3>Blocks and Chains: The Digital Building Blocks</h3>
+                <div class="topic-content">
+                    <div class="analogy-box">
+                        <h4><i class="fas fa-cube"></i> The Lego Block Analogy</h4>
+                        <p>Think of blockchain as a chain of Lego blocks:</p>
+                        <ul style="padding-left: 20px; margin-top: 15px;">
+                            <li><strong>Each block</strong> = A Lego block containing transactions</li>
+                            <li><strong>The chain</strong> = Blocks connected in order</li>
+                            <li><strong>Unique connector</strong> = Each block has a unique shape that fits only with the previous block</li>
+                            <li><strong>Tamper-proof</strong> = If you change one block, it won't connect anymore</li>
+                        </ul>
+                    </div>
+                    
+                    <div style="background: rgba(155, 89, 182, 0.1); padding: 25px; border-radius: 12px; margin: 25px 0; border: 3px solid var(--secondary);">
+                        <h4 style="color: var(--secondary);"><i class="fas fa-cogs"></i> What's Inside a Block?</h4>
+                        <p>Every blockchain block contains:</p>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; margin-top: 15px;">
+                            <div style="padding: 15px; background: rgba(255, 255, 255, 0.1); border-radius: 8px;">
+                                <strong>1. Transactions</strong><br>
+                                <small>The actual data (e.g., "Alice sends Bob 1 BTC")</small>
+                            </div>
+                            <div style="padding: 15px; background: rgba(255, 255, 255, 0.1); border-radius: 8px;">
+                                <strong>2. Timestamp</strong><br>
+                                <small>When the block was created</small>
+                            </div>
+                            <div style="padding: 15px; background: rgba(255, 255, 255, 0.1); border-radius: 8px;">
+                                <strong>3. Previous Hash</strong><br>
+                                <small>Fingerprint of the previous block</small>
+                            </div>
+                            <div style="padding: 15px; background: rgba(255, 255, 255, 0.1); border-radius: 8px;">
+                                <strong>4. Current Hash</strong><br>
+                                <small>This block's unique fingerprint</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="story-box">
+                        <div class="story-title"><i class="fas fa-history"></i> The Chain Reaction Story</div>
+                        <p>Imagine writing a diary where each new page includes a tiny detail from the previous page (like the last word or a small ink smudge). If someone tries to change page 10:</p>
+                        <ul style="padding-left: 20px; margin-top: 15px;">
+                            <li>The change creates a different ink smudge on page 10</li>
+                            <li>Page 11 references the old smudge, so it doesn't match anymore</li>
+                            <li>You'd need to change page 11 to match the new smudge</li>
+                            <li>But then page 12 would be wrong... and so on</li>
+                            <li>You'd have to rewrite the entire rest of the diary!</li>
+                        </ul>
+                        <p style="margin-top: 15px;">This is why blockchain is called "immutable" - changing one block breaks the entire chain.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Topic 3 -->
+            <div class="topic-card">
+                <div class="topic-number">3</div>
+                <h3>Consensus: How Everyone Agrees</h3>
+                <div class="topic-content">
+                    <div class="story-box">
+                        <div class="story-title"><i class="fas fa-users"></i> The Restaurant Voting Story</div>
+                        <p>Five friends can't decide where to eat. They use different voting methods:</p>
+                        
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 25px; margin: 25px 0;">
+                            <div style="padding: 20px; background: rgba(231, 76, 60, 0.1); border-radius: 12px; border: 3px solid var(--accent);">
+                                <h5 style="color: var(--accent);"><i class="fas fa-crown"></i> Method 1: King Decides</h5>
+                                <p>One person (the king) decides for everyone. Fast but unfair.</p>
+                                <p style="margin-top: 10px; font-size: 0.9rem;"><strong>Traditional Banking:</strong> The bank decides which transactions are valid.</p>
+                            </div>
+                            
+                            <div style="padding: 20px; background: rgba(46, 204, 113, 0.1); border-radius: 12px; border: 3px solid var(--success);">
+                                <h5 style="color: var(--success);"><i class="fas fa-vote-yea"></i> Method 2: Majority Vote</h5>
+                                <p>Everyone votes, majority wins. Fair but slow.</p>
+                                <p style="margin-top: 10px; font-size: 0.9rem;"><strong>Blockchain:</strong> Network nodes vote on transaction validity.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="key-concept">
+                        <h4><i class="fas fa-handshake"></i> Two Main Consensus Methods</h4>
+                        
+                        <div style="margin-top: 20px;">
+                            <h5 style="color: var(--primary);"><i class="fas fa-hard-hat"></i> Proof of Work (PoW)</h5>
+                            <p>Used by Bitcoin. Miners solve complex math puzzles. First to solve gets to add the next block and earns rewards.</p>
+                            <div style="padding: 15px; background: rgba(52, 152, 219, 0.1); border-radius: 8px; margin-top: 10px;">
+                                <strong>Analogy:</strong> Imagine a math competition where the first student to solve a difficult problem gets to write the next page in the class diary.
+                            </div>
+                        </div>
+                        
+                        <div style="margin-top: 25px;">
+                            <h5 style="color: var(--secondary);"><i class="fas fa-coins"></i> Proof of Stake (PoS)</h5>
+                            <p>Used by Ethereum 2.0. Validators "stake" their coins as collateral. The more you stake, the higher your chance to validate the next block.</p>
+                            <div style="padding: 15px; background: rgba(155, 89, 182, 0.1); border-radius: 8px; margin-top: 10px;">
+                                <strong>Analogy:</strong> Imagine students put their lunch money in a jar. The more money you put in, the higher your chance to write the next diary page. Cheat, and you lose your money!
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="analogy-box">
+                        <h4><i class="fas fa-balance-scale"></i> PoW vs PoS Comparison</h4>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 15px;">
+                            <div>
+                                <h6>Proof of Work</h6>
+                                <ul style="padding-left: 20px;">
+                                    <li>Like competitive mining</li>
+                                    <li>Energy intensive</li>
+                                    <li>Very secure</li>
+                                    <li>Bitcoin uses this</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h6>Proof of Stake</h6>
+                                <ul style="padding-left: 20px;">
+                                    <li>Like lottery with stakes</li>
+                                    <li>Energy efficient</li>
+                                    <li>Faster transactions</li>
+                                    <li>Ethereum uses this</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Topic 4 -->
+            <div class="topic-card">
+                <div class="topic-number">4</div>
+                <h3>Smart Contracts: The Game Changer</h3>
+                <div class="topic-content">
+                    <div class="story-box">
+                        <div class="story-title"><i class="fas fa-file-contract"></i> The Vending Machine Analogy</div>
+                        <p>A vending machine is a perfect analogy for smart contracts:</p>
+                        <ol style="padding-left: 25px; margin-top: 15px;">
+                            <li><strong>Pre-programmed rules:</strong> If you insert $1, you get a soda</li>
+                            <li><strong>Automatic execution:</strong> No human needed to operate</li>
+                            <li><strong>Trustless:</strong> You trust the machine, not a person</li>
+                            <li><strong>Deterministic:</strong> Same input always produces same output</li>
+                        </ol>
+                        <p style="margin-top: 15px;">Smart contracts are like vending machines on the blockchain - they automatically execute when conditions are met.</p>
+                    </div>
+                    
+                    <div style="background: rgba(52, 152, 219, 0.1); padding: 25px; border-radius: 12px; margin: 25px 0; border: 3px solid var(--primary);">
+                        <h4 style="color: var(--primary);"><i class="fas fa-code"></i> What is a Smart Contract?</h4>
+                        <p>A smart contract is <strong>self-executing code</strong> stored on the blockchain that runs when predetermined conditions are met.</p>
+                        
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 20px;">
+                            <div style="padding: 20px; background: rgba(255, 255, 255, 0.1); border-radius: 10px;">
+                                <h6 style="color: var(--success);">Traditional Contract</h6>
+                                <ul style="padding-left: 20px; font-size: 0.9rem;">
+                                    <li>Written on paper</li>
+                                    <li>Requires lawyers</li>
+                                    <li>Manual enforcement</li>
+                                    <li>Can be disputed</li>
+                                    <li>Slow and expensive</li>
+                                </ul>
+                            </div>
+                            
+                            <div style="padding: 20px; background: rgba(255, 255, 255, 0.1); border-radius: 10px;">
+                                <h6 style="color: var(--secondary);">Smart Contract</h6>
+                                <ul style="padding-left: 20px; font-size: 0.9rem;">
+                                    <li>Written in code</li>
+                                    <li>No middlemen needed</li>
+                                    <li>Auto-enforcement</li>
+                                    <li>Deterministic</li>
+                                    <li>Fast and cheap</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="story-box">
+                        <div class="story-title"><i class="fas fa-home"></i> Real Estate Example</div>
+                        <p>Traditional house purchase:</p>
+                        <ul style="padding-left: 20px;">
+                            <li>Sign paper contracts</li>
+                            <li>Hire lawyers ($5,000+)</li>
+                            <li>Wait 30-60 days</li>
+                            <li>Trust escrow company</li>
+                            <li>Pay bank transfer fees</li>
+                        </ul>
+                        
+                        <p style="margin-top: 15px;">Smart contract house purchase:</p>
+                        <ul style="padding-left: 20px;">
+                            <li>Code says: "If buyer sends $300,000, transfer house title"</li>
+                            <li>No lawyers needed</li>
+                            <li>Completes in minutes</li>
+                            <li>Trust the code, not people</li>
+                            <li>Minimal fees</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="quiz-box">
+                        <h4><i class="fas fa-question-circle"></i> Module 2 Quiz</h4>
+                        <p>Why is blockchain considered "immutable" or unchangeable?</p>
+                        <button class="quiz-btn">
+                            <i class="fas fa-eye"></i>
+                            <span>Show Answer</span>
+                        </button>
+                        <div class="quiz-answer">
+                            <p><strong>Answer:</strong> Blockchain is immutable because each block contains the cryptographic hash of the previous block. Changing any block would change its hash, breaking the chain with all subsequent blocks. You'd need to change every block after it AND convince the majority of the network to accept your changes - which is computationally and practically impossible.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+                <span>Show Modules</span>
+            </button>
+
+            <div class="module-nav">
+                <a href="index.html" class="module-btn"><i class="fas fa-home"></i> Home</a>
+                <a href="module1.html" class="module-btn">Module 1</a>
+                <a href="module2.html" class="module-btn active">Module 2</a>
+                <a href="module3.html" class="module-btn">Module 3</a>
+                <a href="module4.html" class="module-btn">Module 4</a>
+                <a href="module5.html" class="module-btn">Module 5</a>
+                <a href="module6.html" class="module-btn">Module 6</a>
+                <a href="module7.html" class="module-btn">Module 7</a>
+                <a href="module8.html" class="module-btn">Module 8</a>
+            </div>
+        </main>
+
+        <div class="navigation">
+            <a href="module1.html" class="nav-btn prev">
+                <i class="fas fa-arrow-left"></i>
+                <span>Previous: Money Revolution</span>
+            </a>
+            <a href="module3.html" class="nav-btn next">
+                <span>Next: Your Crypto Fortress</span>
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+
+        <footer>
+            <p><i class="fas fa-graduation-cap"></i> <strong>Module 2 Complete!</strong> You now understand how blockchain works.</p>
+            <p>© 2026 Mandera Crypto Center | Module 2 of 8 | Next: Security & Wallets</p>
+        </footer>
+    </div>
+
+    <script src="script2.js"></script>
+</body>
+</html>

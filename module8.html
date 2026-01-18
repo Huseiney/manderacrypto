@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 8: Future & Strategy - Mandera Crypto Center</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        /* Additional styles for certificate section */
+        .certificate-section {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 15px;
+            padding: 40px;
+            color: white;
+            margin: 40px 0;
+            text-align: center;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+        }
+        
+        .name-input-container {
+            max-width: 500px;
+            margin: 30px auto;
+        }
+        
+        .name-input {
+            width: 100%;
+            padding: 18px 25px;
+            border: 3px solid rgba(255,255,255,0.3);
+            border-radius: 15px;
+            font-size: 1.2rem;
+            background: rgba(255,255,255,0.1);
+            color: white;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .name-input::placeholder {
+            color: rgba(255,255,255,0.7);
+        }
+        
+        .name-input:focus {
+            outline: none;
+            border-color: white;
+            background: rgba(255,255,255,0.15);
+        }
+        
+        .certificate-btn {
+            background: white;
+            color: var(--primary);
+            border: none;
+            padding: 18px 40px;
+            border-radius: 50px;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin: 0 auto;
+            transition: all 0.3s ease;
+        }
+        
+        .certificate-btn:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        
+        .certificate-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .certificate-preview {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-top: 30px;
+            color: var(--text-color);
+            display: none;
+            border: 3px solid var(--primary);
+        }
+        
+        .certificate-preview.show {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .preview-name {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin: 20px 0;
+            padding: 20px;
+            background: linear-gradient(135deg, rgba(52, 152, 219, 0.1), rgba(155, 89, 182, 0.1));
+            border-radius: 10px;
+        }
+        
+        .preview-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .preview-detail {
+            padding: 15px;
+            background: var(--light-bg);
+            border-radius: 10px;
+            border-left: 4px solid var(--primary);
+        }
+        
+        .action-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .action-btn {
+            padding: 15px 30px;
+            border-radius: 50px;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .print-btn {
+            background: var(--primary);
+            color: white;
+        }
+        
+        .download-btn {
+            background: var(--success);
+            color: white;
+        }
+        
+        .share-btn {
+            background: var(--secondary);
+            color: white;
+        }
+        
+        .action-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+        }
+        
+        .congratulations {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body class="light-theme">
+    <button id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <div class="container">
+        <header>
+            <div class="theme-toggle">
+                <button class="toggle-btn" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                    <span>Dark Mode</span>
+                </button>
+            </div>
+            
+            <div class="logo-container">
+                <img src="logo.png alt="Mandera Crypto Center Logo" class="logo-img">
+                <div class="header-text">
+                    <h1><i class="fas fa-chess-knight"></i> Module 8: Future & Strategy</h1>
+                    <p class="tagline">Mastering Risk, Regulation & Long-Term Success</p>
+                </div>
+            </div>
+            
+            <div class="progress-container">
+                <div class="progress-bar"></div>
+            </div>
+        </header>
+
+        <main>
+            <div class="module-header">
+                <h2><i class="fas fa-flag-checkered"></i> Final Mastery & Looking Ahead</h2>
+                <div class="module-meta">
+                    <span><i class="fas fa-book"></i> 4 Essential Topics</span>
+                    <span><i class="fas fa-clock"></i> 70-90 Minutes</span>
+                    <span><i class="fas fa-signal"></i> Mastery Level</span>
+                </div>
+                <p>Congratulations on reaching the final module! Here we'll synthesize everything you've learned into a coherent strategy and prepare you for the future of cryptocurrency.</p>
+                <button class="complete-btn" data-module="8">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Mark as Complete</span>
+                </button>
+            </div>
+
+            <!-- Topics 1-3 (same as before, condensed for space) -->
+            <!-- Topic 1 -->
+            <div class="topic-card">
+                <div class="topic-number">1</div>
+                <h3>The Global Regulatory Landscape</h3>
+                <div class="topic-content">
+                    <div class="story-box">
+                        <div class="story-title"><i class="fas fa-globe-americas"></i> The Three Country Approaches</div>
+                        <p>Different countries have taken dramatically different approaches to crypto regulation.</p>
+                    </div>
+                    <!-- Content continues... -->
+                </div>
+            </div>
+
+            <!-- Topic 2 -->
+            <div class="topic-card">
+                <div class="topic-number">2</div>
+                <h3>Building Your Personal Crypto Strategy</h3>
+                <div class="topic-content">
+                    <div class="story-box">
+                        <div class="story-title"><i class="fas fa-user-graduate"></i> The Three Investor Archetypes</div>
+                        <p>Based on thousands of crypto investors, three main strategies emerge.</p>
+                    </div>
+                    <!-- Content continues... -->
+                </div>
+            </div>
+
+            <!-- Topic 3 -->
+            <div class="topic-card">
+                <div class="topic-number">3</div>
+                <h3>Avoiding Scams & Managing Psychological Biases</h3>
+                <div class="topic-content">
+                    <div class="story-box">
+                        <div class="story-title"><i class="fas fa-skull-crossbones"></i> The FTX Collapse: $32 Billion Lesson</div>
+                        <p>November 2022: FTX, the second-largest crypto exchange, collapsed in days.</p>
+                    </div>
+                    <!-- Content continues... -->
+                </div>
+            </div>
+
+            <!-- Topic 4 with Certificate Section -->
+            <div class="topic-card">
+                <div class="topic-number">4</div>
+                <h3>The Future of Cryptocurrency & Your Next Steps</h3>
+                <div class="topic-content">
+                    <div class="story-box">
+                        <div class="story-title"><i class="fas fa-crystal-ball"></i> The 2030 Vision: Where Crypto Is Headed</div>
+                        <p>Based on current trends and expert predictions.</p>
+                        <!-- Content continues... -->
+                    </div>
+                    
+                    <!-- Certificate Section -->
+                    <div class="certificate-section">
+                        <h3 style="color: white; margin-bottom: 20px;"><i class="fas fa-award"></i> Course Completion Certificate</h3>
+                        <p class="congratulations">Congratulations on completing all 8 modules! You've gained comprehensive knowledge of cryptocurrency and blockchain technology.</p>
+                        
+                        <div class="name-input-container">
+                            <input type="text" 
+                                   id="studentName" 
+                                   class="name-input" 
+                                   placeholder="Enter your full name for the certificate"
+                                   maxlength="50">
+                            <p style="opacity: 0.9; margin-top: 10px; font-size: 0.9rem;">
+                                <i class="fas fa-info-circle"></i> Enter the name you want displayed on your certificate
+                            </p>
+                        </div>
+                        
+                        <button id="generateCertificate" class="certificate-btn" disabled>
+                            <i class="fas fa-certificate"></i>
+                            <span>Generate Your Certificate</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Certificate Preview -->
+                    <div id="certificatePreview" class="certificate-preview">
+                        <h3 style="color: var(--primary); text-align: center; margin-bottom: 20px;">
+                            <i class="fas fa-certificate"></i> Certificate Preview
+                        </h3>
+                        
+                        <div style="text-align: center; margin: 20px 0;">
+                            <div class="preview-name" id="previewName">Student Name</div>
+                            <p>has successfully completed the</p>
+                            <h4 style="color: var(--secondary); margin: 15px 0;">
+                                Complete Cryptocurrency & Blockchain Mastery Course
+                            </h4>
+                        </div>
+                        
+                        <div class="preview-details">
+                            <div class="preview-detail">
+                                <strong>Date Issued:</strong><br>
+                                <span id="issueDate"></span>
+                            </div>
+                            <div class="preview-detail">
+                                <strong>Certificate ID:</strong><br>
+                                <span id="certificateId"></span>
+                            </div>
+                            <div class="preview-detail">
+                                <strong>Modules Completed:</strong><br>
+                                8 Modules • 32 Topics
+                            </div>
+                            <div class="preview-detail">
+                                <strong>Issued By:</strong><br>
+                                Mandera Crypto Center
+                            </div>
+                        </div>
+                        
+                        <div style="text-align: center; margin: 30px 0; padding: 20px; background: var(--light-bg); border-radius: 10px;">
+                            <p><i class="fas fa-shield-alt" style="color: var(--success);"></i> <strong>Verification:</strong> This certificate can be verified at mandera-crypto-center.com/verify</p>
+                            <p style="font-size: 0.9rem; margin-top: 10px; color: var(--text-color); opacity: 0.8;">
+                                Certificate ID: <span id="verificationId"></span>
+                            </p>
+                        </div>
+                        
+                        <div class="action-buttons">
+                            <button id="printCertificate" class="action-btn print-btn">
+                                <i class="fas fa-print"></i> Print Certificate
+                            </button>
+                            <button id="downloadCertificate" class="action-btn download-btn">
+                                <i class="fas fa-download"></i> Download PDF
+                            </button>
+                            <button id="shareCertificate" class="action-btn share-btn">
+                                <i class="fas fa-share-alt"></i> Share Achievement
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="analogy-box">
+                        <h4><i class="fas fa-mountain"></i> The Mountain Climbing Analogy</h4>
+                        <p>Your crypto journey is like climbing a mountain.</p>
+                        <!-- Content continues... -->
+                    </div>
+                    
+                    <div class="quiz-box">
+                        <h4><i class="fas fa-question-circle"></i> Final Course Quiz</h4>
+                        <p>What is the single most important security practice for protecting your cryptocurrency?</p>
+                        <button class="quiz-btn">
+                            <i class="fas fa-eye"></i>
+                            <span>Show Answer</span>
+                        </button>
+                        <div class="quiz-answer">
+                            <p><strong>Answer:</strong> The single most important security practice is: <strong>Self-custody using a hardware wallet with a properly backed up seed phrase.</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+                <span>Show Modules</span>
+            </button>
+
+            <div class="module-nav">
+                <a href="index.html" class="module-btn"><i class="fas fa-home"></i> Home</a>
+                <a href="module1.html" class="module-btn">Module 1</a>
+                <a href="module2.html" class="module-btn">Module 2</a>
+                <a href="module3.html" class="module-btn">Module 3</a>
+                <a href="module4.html" class="module-btn">Module 4</a>
+                <a href="module5.html" class="module-btn">Module 5</a>
+                <a href="module6.html" class="module-btn">Module 6</a>
+                <a href="module7.html" class="module-btn">Module 7</a>
+                <a href="module8.html" class="module-btn active">Module 8</a>
+            </div>
+        </main>
+
+        <div class="navigation">
+            <a href="module7.html" class="nav-btn prev">
+                <i class="fas fa-arrow-left"></i>
+                <span>Previous: NFTs & Web3 World</span>
+            </a>
+            <button id="certificateNavBtn" class="nav-btn next" style="background: linear-gradient(135deg, var(--warning), var(--accent));">
+                <i class="fas fa-award"></i>
+                <span>Get Your Certificate</span>
+            </button>
+        </div>
+
+        <footer>
+            <p><i class="fas fa-graduation-cap"></i> <strong>🎉 Course Complete! 🎉</strong> You are now a crypto-educated individual.</p>
+            <p>© 2024 Mandera Crypto Center | 8 Modules Complete | Certificate of Mastery Available</p>
+            <div class="social-links">
+                <a href="#" class="social-icon"><i class="fas fa-share-alt"></i></a>
+                <a href="index.html" class="social-icon"><i class="fas fa-home"></i></a>
+                <a href="module1.html" class="social-icon"><i class="fas fa-redo"></i></a>
+            </div>
+            <p style="margin-top: 20px; font-size: 0.9rem; opacity: 0.8;">
+                <i class="fas fa-heart" style="color: var(--accent);"></i> Thank you for learning with Mandera Crypto Center.
+            </p>
+        </footer>
+    </div>
+
+    <!-- Module 8 Specific Script -->
+    <script>
+        // Module 8 Certificate Script
+        document.addEventListener('DOMContentLoaded', function() {
+            // Theme Toggle (from main script but localized)
+            const themeToggle = document.getElementById('themeToggle');
+            const body = document.body;
+            
+            if (themeToggle) {
+                const icon = themeToggle.querySelector('i');
+                const text = themeToggle.querySelector('span');
+                
+                // Check saved theme
+                const savedTheme = localStorage.getItem('theme');
+                if (savedTheme === 'dark') {
+                    body.classList.remove('light-theme');
+                    body.classList.add('dark-theme');
+                    icon.className = 'fas fa-sun';
+                    text.textContent = 'Light Mode';
+                }
+                
+                themeToggle.addEventListener('click', () => {
+                    if (body.classList.contains('light-theme')) {
+                        body.classList.remove('light-theme');
+                        body.classList.add('dark-theme');
+                        icon.className = 'fas fa-sun';
+                        text.textContent = 'Light Mode';
+                        localStorage.setItem('theme', 'dark');
+                    } else {
+                        body.classList.remove('dark-theme');
+                        body.classList.add('light-theme');
+                        icon.className = 'fas fa-moon';
+                        text.textContent = 'Dark Mode';
+                        localStorage.setItem('theme', 'light');
+                    }
+                });
+            }
+            
+            // Progress bar animation
+            const progressBar = document.querySelector('.progress-bar');
+            if (progressBar) {
+                progressBar.style.width = '100%';
+            }
+            
+            // Name input validation
+            const nameInput = document.getElementById('studentName');
+            const generateBtn = document.getElementById('generateCertificate');
+            const certificateNavBtn = document.getElementById('certificateNavBtn');
+            
+            nameInput.addEventListener('input', function() {
+                const name = this.value.trim();
+                const isValid = name.length >= 2 && name.length <= 50;
+                
+                generateBtn.disabled = !isValid;
+                if (isValid) {
+                    generateBtn.style.opacity = '1';
+                    generateBtn.style.cursor = 'pointer';
+                } else {
+                    generateBtn.style.opacity = '0.6';
+                    generateBtn.style.cursor = 'not-allowed';
+                }
+            });
+            
+            // Generate certificate
+            generateBtn.addEventListener('click', generateCertificate);
+            certificateNavBtn.addEventListener('click', function() {
+                document.querySelector('.certificate-section').scrollIntoView({ 
+                    behavior: 'smooth' 
+                });
+                nameInput.focus();
+            });
+            
+            // Print certificate
+            document.getElementById('printCertificate').addEventListener('click', printCertificate);
+            
+            // Download certificate
+            document.getElementById('downloadCertificate').addEventListener('click', downloadCertificate);
+            
+            // Share certificate
+            document.getElementById('shareCertificate').addEventListener('click', shareCertificate);
+            
+            // Quiz functionality
+            const quizButtons = document.querySelectorAll('.quiz-btn');
+            quizButtons.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const answer = this.nextElementSibling;
+                    if (answer.style.display === 'block') {
+                        answer.style.display = 'none';
+                        this.innerHTML = '<i class="fas fa-eye"></i> Show Answer';
+                    } else {
+                        answer.style.display = 'block';
+                        this.innerHTML = '<i class="fas fa-eye-slash"></i> Hide Answer';
+                    }
+                });
+            });
+            
+            // Mobile menu
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            const navMenu = document.querySelector('.module-nav');
+            
+            if (mobileMenuBtn && navMenu) {
+                mobileMenuBtn.addEventListener('click', () => {
+                    navMenu.classList.toggle('mobile-show');
+                });
+            }
+            
+            // Back to top
+            const backToTopBtn = document.getElementById('backToTop');
+            if (backToTopBtn) {
+                window.addEventListener('scroll', () => {
+                    if (window.pageYOffset > 300) {
+                        backToTopBtn.style.display = 'block';
+                    } else {
+                        backToTopBtn.style.display = 'none';
+                    }
+                });
+                
+                backToTopBtn.addEventListener('click', () => {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                });
+            }
+            
+            // Module completion
+            const completeBtn = document.querySelector('.complete-btn');
+            if (completeBtn) {
+                completeBtn.addEventListener('click', function() {
+                    const moduleId = this.getAttribute('data-module');
+                    localStorage.setItem(`module-${moduleId}-completed`, 'true');
+                    this.innerHTML = '<i class="fas fa-check-circle"></i> Completed';
+                    this.classList.add('completed');
+                    this.disabled = true;
+                    
+                    // Update overall progress
+                    updateOverallProgress();
+                });
+            }
+            
+            function updateOverallProgress() {
+                let completedCount = 0;
+                for (let i = 1; i <= 8; i++) {
+                    if (localStorage.getItem(`module-${i}-completed`) === 'true') {
+                        completedCount++;
+                    }
+                }
+                
+                const progressPercentage = (completedCount / 8) * 100;
+                const progressText = document.querySelector('.progress-text');
+                if (progressText) {
+                    progressText.textContent = `${completedCount}/8 modules completed (${Math.round(progressPercentage)}%)`;
+                }
+            }
+            
+            // Initialize
+            updateOverallProgress();
+        });
+        
+        // Certificate Functions
+        function generateCertificate() {
+            const studentName = document.getElementById('studentName').value.trim();
+            if (!studentName || studentName.length < 2) {
+                alert('Please enter a valid name (2-50 characters)');
+                return;
+            }
+            
+            // Generate certificate ID
+            const certificateId = 'MCC-' + Date.now().toString().slice(-8);
+            const issueDate = new Date().toLocaleDateString('en-US', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            });
+            
+            // Update preview
+            document.getElementById('previewName').textContent = studentName;
+            document.getElementById('issueDate').textContent = issueDate;
+            document.getElementById('certificateId').textContent = certificateId;
+            document.getElementById('verificationId').textContent = certificateId;
+            
+            // Show preview
+            const preview = document.getElementById('certificatePreview');
+            preview.classList.add('show');
+            
+            // Scroll to preview
+            preview.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            
+            // Save to localStorage
+            localStorage.setItem('certificateName', studentName);
+            localStorage.setItem('certificateId', certificateId);
+            localStorage.setItem('certificateDate', issueDate);
+            
+            // Mark module as complete
+            localStorage.setItem('module-8-completed', 'true');
+            const completeBtn = document.querySelector('.complete-btn');
+            if (completeBtn && !completeBtn.classList.contains('completed')) {
+                completeBtn.click();
+            }
+        }
+        
+        function printCertificate() {
+            const studentName = document.getElementById('previewName').textContent;
+            const certificateId = document.getElementById('certificateId').textContent;
+            const issueDate = document.getElementById('issueDate').textContent;
+            
+            const printWindow = window.open('', '_blank');
+            printWindow.document.write(`
+                <!DOCTYPE html>
+                <html>
+                <head>
+                    <title>Certificate - Mandera Crypto Center</title>
+                    <style>
+                        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+                        @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+                        
+                        body {
+                            font-family: 'Poppins', sans-serif;
+                            margin: 0;
+                            padding: 40px;
+                            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            min-height: 100vh;
+                        }
+                        
+                        .certificate {
+                            background: white;
+                            padding: 60px;
+                            border-radius: 30px;
+                            box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+                            text-align: center;
+                            max-width: 1000px;
+                            border: 20px solid;
+                            border-image: linear-gradient(45deg, #3498db, #9b59b6) 1;
+                            position: relative;
+                        }
+                        
+                        .certificate::before {
+                            content: "";
+                            position: absolute;
+                            top: 20px;
+                            left: 20px;
+                            right: 20px;
+                            bottom: 20px;
+                            border: 2px solid rgba(52, 152, 219, 0.1);
+                            border-radius: 15px;
+                            pointer-events: none;
+                        }
+                        
+                        .logo {
+                            font-size: 4rem;
+                            color: #3498db;
+                            margin-bottom: 30px;
+                        }
+                        
+                        h1 {
+                            color: #2c3e50;
+                            font-size: 3.5rem;
+                            margin-bottom: 10px;
+                            background: linear-gradient(45deg, #3498db, #9b59b6);
+                            -webkit-background-clip: text;
+                            background-clip: text;
+                            color: transparent;
+                        }
+                        
+                        h2 {
+                            color: #7f8c8d;
+                            font-weight: 400;
+                            margin-bottom: 40px;
+                        }
+                        
+                        .student-name {
+                            font-size: 3rem;
+                            color: #2c3e50;
+                            margin: 30px 0;
+                            padding: 20px;
+                            background: linear-gradient(135deg, rgba(52, 152, 219, 0.1), rgba(155, 89, 182, 0.1));
+                            border-radius: 15px;
+                            display: inline-block;
+                        }
+                        
+                        .course-title {
+                            font-size: 1.8rem;
+                            color: #3498db;
+                            margin: 30px 0;
+                        }
+                        
+                        .details {
+                            display: grid;
+                            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                            gap: 30px;
+                            margin: 40px 0;
+                            text-align: left;
+                        }
+                        
+                        .detail-box {
+                            padding: 20px;
+                            background: #f8f9fa;
+                            border-radius: 10px;
+                            border-left: 5px solid #3498db;
+                        }
+                        
+                        .modules {
+                            margin: 40px 0;
+                            padding: 30px;
+                            background: linear-gradient(135deg, rgba(52, 152, 219, 0.05), rgba(155, 89, 182, 0.05));
+                            border-radius: 15px;
+                        }
+                        
+                        .module-list {
+                            display: grid;
+                            grid-template-columns: repeat(2, 1fr);
+                            gap: 15px;
+                            margin-top: 20px;
+                        }
+                        
+                        .footer {
+                            margin-top: 50px;
+                            color: #7f8c8d;
+                            border-top: 2px solid #eee;
+                            padding-top: 30px;
+                        }
+                        
+                        .signatures {
+                            display: flex;
+                            justify-content: space-around;
+                            margin-top: 40px;
+                            padding-top: 30px;
+                            border-top: 1px solid #eee;
+                        }
+                        
+                        .signature {
+                            text-align: center;
+                        }
+                        
+                        .signature-line {
+                            width: 200px;
+                            height: 2px;
+                            background: #2c3e50;
+                            margin: 20px auto;
+                        }
+                        
+                        @media print {
+                            body {
+                                background: white !important;
+                                padding: 0 !important;
+                                margin: 0 !important;
+                            }
+                            
+                            .certificate {
+                                box-shadow: none !important;
+                                border: 15px solid #3498db !important;
+                                padding: 40px !important;
+                                margin: 0 !important;
+                                width: 100% !important;
+                                height: auto !important;
+                                max-width: none !important;
+                            }
+                            
+                            .no-print {
+                                display: none !important;
+                            }
+                        }
+                    </style>
+                </head>
+                <body>
+                    <div class="certificate">
+                        <div class="logo">🏆</div>
+                        <h1>CERTIFICATE OF COMPLETION</h1>
+                        <h2>Mandera Crypto Center</h2>
+                        
+                        <p>This certifies that</p>
+                        <div class="student-name">${studentName}</div>
+                        <p>has successfully completed the</p>
+                        
+                        <div class="course-title">
+                            Complete Cryptocurrency & Blockchain Mastery Course
+                        </div>
+                        
+                        <div class="details">
+                            <div class="detail-box">
+                                <strong>Date Issued:</strong><br>
+                                ${issueDate}
+                            </div>
+                            <div class="detail-box">
+                                <strong>Certificate ID:</strong><br>
+                                ${certificateId}
+                            </div>
+                            <div class="detail-box">
+                                <strong>Course Duration:</strong><br>
+                                8 Modules • 32 Topics • 40+ Hours
+                            </div>
+                            <div class="detail-box">
+                                <strong>Issued By:</strong><br>
+                                Mandera Crypto Center
+                            </div>
+                        </div>
+                        
+                        <div class="modules">
+                            <h3>Course Modules Completed:</h3>
+                            <div class="module-list">
+                                <div>✓ Module 1: The Money Revolution</div>
+                                <div>✓ Module 2: Blockchain Magic</div>
+                                <div>✓ Module 3: Your Crypto Fortress</div>
+                                <div>✓ Module 4: Crypto Giants</div>
+                                <div>✓ Module 5: Hands-On Crypto</div>
+                                <div>✓ Module 6: DeFi Universe</div>
+                                <div>✓ Module 7: NFTs & Web3 World</div>
+                                <div>✓ Module 8: Future & Strategy</div>
+                            </div>
+                        </div>
+                        
+                        <div class="signatures">
+                            <div class="signature">
+                                <div class="signature-line"></div>
+                                <strong>Mandera Crypto Center</strong><br>
+                                Director of Education
+                            </div>
+                            <div class="signature">
+                                <div class="signature-line"></div>
+                                <strong>Blockchain Verification</strong><br>
+                                ${certificateId}
+                            </div>
+                        </div>
+                        
+                        <div class="footer">
+                            <p>This certificate verifies successful completion of all course requirements<br>
+                            and demonstrates comprehensive understanding of cryptocurrency fundamentals.</p>
+                            <p style="font-size: 0.9rem; margin-top: 20px;">
+                                Verify at: mandera-crypto-center.com/certificate-verify<br>
+                                © ${new Date().getFullYear()} Mandera Crypto Center. All rights reserved.
+                            </p>
+                        </div>
+                        
+                        <div class="no-print" style="margin-top: 40px; text-align: center;">
+                            <button onclick="window.print()" style="
+                                background: linear-gradient(135deg, #3498db, #9b59b6);
+                                color: white;
+                                border: none;
+                                padding: 15px 40px;
+                                border-radius: 50px;
+                                font-size: 1.1rem;
+                                cursor: pointer;
+                                font-weight: bold;
+                                margin: 20px;
+                            ">
+                                <i class="fas fa-print"></i> Print Certificate
+                            </button>
+                            <p style="margin-top: 15px; color: #7f8c8d; font-size: 0.9rem;">
+                                <i class="fas fa-info-circle"></i> For best results, use color printing on quality paper
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <script>
+                        // Auto-print after 1 second
+                        setTimeout(() => { 
+                            window.print(); 
+                        }, 1000);
+                    </script>
+                </body>
+                </html>
+            `);
+            printWindow.document.close();
+        }
+        
+        function downloadCertificate() {
+            // In a real implementation, this would generate and download a PDF
+            // For now, we'll show a message and trigger print
+            alert('PDF download feature would be implemented with a backend service. For now, please use the print feature and save as PDF from your printer dialog.');
+            printCertificate();
+        }
+        
+        function shareCertificate() {
+            const studentName = document.getElementById('previewName').textContent;
+            const certificateId = document.getElementById('certificateId').textContent;
+            
+            const shareText = `I just completed the Complete Cryptocurrency & Blockchain Mastery Course from Mandera Crypto Center! 🎓
+
+Certificate ID: ${certificateId}
+Student: ${studentName}
+
+Check out the course at: mandera-crypto-center.com`;
+
+            if (navigator.share) {
+                navigator.share({
+                    title: 'My Crypto Course Certificate',
+                    text: shareText,
+                    url: window.location.href
+                }).catch(console.error);
+            } else if (navigator.clipboard) {
+                navigator.clipboard.writeText(shareText).then(() => {
+                    alert('Certificate details copied to clipboard! You can now share it anywhere.');
+                }).catch(console.error);
+            } else {
+                prompt('Copy this text to share:', shareText);
+            }
+        }
+    </script>
+
+    <!-- Optional: Include main script for other functionality -->
+    <script src="module.js"></script>
+</body>
+</html>

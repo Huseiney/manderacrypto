@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 7: NFTs & Web3 World - Mandera Crypto Center</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body class="light-theme">
+    <button id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <div class="container">
+        <header>
+            <div class="theme-toggle">
+                <button class="toggle-btn" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                    <span>Dark Mode</span>
+                </button>
+            </div>
+            
+            <div class="logo-container">
+                <img src="logo.png" alt="Mandera Crypto Center Logo" class="logo-img">
+                <div class="header-text">
+                    <h1><i class="fas fa-paint-brush"></i> Module 7: NFTs & Web3 World</h1>
+                    <p class="tagline">Digital Ownership, Creator Economy & The Next Internet</p>
+                </div>
+            </div>
+            
+            <div class="progress-container">
+                <div class="progress-bar"></div>
+            </div>
+        </header>
+
+        <main>
+            <div class="module-header">
+                <h2><i class="fas fa-globe"></i> Web3 & Digital Ownership</h2>
+                <div class="module-meta">
+                    <span><i class="fas fa-book"></i> 4 Essential Topics</span>
+                    <span><i class="fas fa-clock"></i> 60-80 Minutes</span>
+                    <span><i class="fas fa-signal"></i> Advanced Level</span>
+                </div>
+                <p>NFTs are more than just digital art - they're the foundation of Web3, digital identity, and the creator economy. Discover how blockchain is reshaping the internet itself.</p>
+                <button class="complete-btn" data-module="7">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Mark as Complete</span>
+                </button>
+            </div>
+
+            <!-- Topic 1 -->
+            <div class="topic-card">
+                <div class="topic-number">1</div>
+                <h3>NFTs: Beyond Digital Art & Collectibles</h3>
+                <div class="topic-content">
+                    <div class="story-box">
+                        <div class="story-title"><i class="fas fa-ape"></i> The Bored Ape Story</div>
+                        <p>In April 2021, Bored Ape Yacht Club launched 10,000 unique ape NFTs at 0.08 ETH each ($200 at the time).</p>
+                        
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 25px; margin: 25px 0;">
+                            <div style="padding: 20px; background: rgba(52, 152, 219, 0.1); border-radius: 12px;">
+                                <h5 style="color: var(--primary); text-align: center;">The Investment</h5>
+                                <div style="text-align: center; font-size: 2rem; margin: 15px 0;">
+                                    <i class="fas fa-chart-line" style="color: var(--success);"></i>
+                                </div>
+                                <p style="text-align: center;"><strong>Initial:</strong> $200 per ape</p>
+                                <p style="text-align: center;"><strong>Peak:</strong> $400,000 per ape</p>
+                                <p style="text-align: center;"><strong>Growth:</strong> 200,000× return</p>
+                            </div>
+                            
+                            <div style="padding: 20px; background: rgba(155, 89, 182, 0.1); border-radius: 12px;">
+                                <h5 style="color: var(--secondary); text-align: center;">The Community</h5>
+                                <div style="text-align: center; font-size: 2rem; margin: 15px 0;">
+                                    <i class="fas fa-users" style="color: var(--secondary);"></i>
+                                </div>
+                                <ul style="padding-left: 20px;">
+                                    <li>Access to exclusive events</li>
+                                    <li>Commercial rights to your ape</li>
+                                    <li>Governance voting power</li>
+                                    <li>Free future NFT airdrops</li>
+                                    <li>Celebrity memberships</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <p><strong>The lesson:</strong> NFTs created the first digitally-native social clubs with provable membership and shared economics.</p>
+                    </div>
+                    
+                    <div class="key-concept">
+                        <h4><i class="fas fa-fingerprint"></i> What Actually is an NFT?</h4>
+                        <p>NFT = Non-Fungible Token. "Non-fungible" means unique and not interchangeable.</p>
+                        
+                        <div style="margin-top: 20px;">
+                            <h5 style="color: var(--primary);">Fungible Examples (Interchangeable)</h5>
+                            <div style="display: flex; gap: 20px; margin-top: 10px; flex-wrap: wrap;">
+                                <div style="padding: 10px 15px; background: rgba(52, 152, 219, 0.1); border-radius: 8px;">
+                                    <i class="fas fa-money-bill-wave"></i> Dollar bills
+                                </div>
+                                <div style="padding: 10px 15px; background: rgba(52, 152, 219, 0.1); border-radius: 8px;">
+                                    <i class="fab fa-bitcoin"></i> Bitcoin
+                                </div>
+                                <div style="padding: 10px 15px; background: rgba(52, 152, 219, 0.1); border-radius: 8px;">
+                                    <i class="fas fa-gas-pump"></i> Gallons of gas
+                                </div>
+                                <div style="padding: 10px 15px; background: rgba(52, 152, 219, 0.1); border-radius: 8px;">
+                                    <i class="fas fa-cube"></i> Identical products
+                                </div>
+                            </div>
+                            
+                            <h5 style="color: var(--secondary); margin-top: 25px;">Non-Fungible Examples (Unique)</h5>
+                            <div style="display: flex; gap: 20px; margin-top: 10px; flex-wrap: wrap;">
+                                <div style="padding: 10px 15px; background: rgba(155, 89, 182, 0.1); border-radius: 8px;">
+                                    <i class="fas fa-home"></i> Your house deed
+                                </div>
+                                <div style="padding: 10px 15px; background: rgba(155, 89, 182, 0.1); border-radius: 8px;">
+                                    <i class="fas fa-painting"></i> Original painting
+                                </div>
+                                <div style="padding: 10px 15px; background: rgba(155, 89, 182, 0.1); border-radius: 8px;">
+                                    <i class="fas fa-passport"></i> Your passport
+                                </div>
+                                <div style="padding: 10px 15px; background: rgba(155, 89, 182, 0.1); border-radius: 8px;">
+                                    <i class="fas fa-trophy"></i> Championship trophy
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="background: rgba(241, 196, 15, 0.1); padding: 25px; border-radius: 12px; margin: 25px 0; border: 3px solid var(--warning);">
+                        <h4 style="color: var(--warning);"><i class="fas fa-lightbulb"></i> NFTs Are More Than Art!</h4>
+                        <p>Most people think NFTs = digital art. Actually, they're digital certificates of ownership for ANYTHING:</p>
+                        
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-top: 20px;">
+                            <div style="padding: 15px; background: rgba(255, 255, 255, 0.1); border-radius: 8px; text-align: center;">
+                                <i class="fas fa-ticket-alt" style="color: var(--primary); font-size: 1.5rem;"></i>
+                                <h6 style="margin-top: 10px;">Event Tickets</h6>
+                                <p><small>No scalping, verifiable</small></p>
+                            </div>
+                            
+                            <div style="padding: 15px; background: rgba(255, 255, 255, 0.1); border-radius: 8px; text-align: center;">
+                                <i class="fas fa-gamepad" style="color: var(--secondary); font-size: 1.5rem;"></i>
+                                <h6 style="margin-top: 10px;">Game Items</h6>
+                                <p><small>True ownership across games</small></p>
+                            </div>
+                            
+                            <div style="padding: 15px; background: rgba(255, 255, 255, 0.1); border-radius: 8px; text-align: center;">
+                                <i class="fas fa-file-contract" style="color: var(--success); font-size: 1.5rem;"></i>
+                                <h6 style="margin-top: 10px;">Legal Documents</h6>
+                                <p><small>Deeds, certificates, wills</small></p>
+                            </div>
+                            
+                            <div style="padding: 15px; background: rgba(255, 255, 255, 0.1); border-radius: 8px; text-align: center;">
+                                <i class="fas fa-music" style="color: var(--accent); font-size: 1.5rem;"></i>
+                                <h6 style="margin-top: 10px;">Music Royalties</h6>
+                                <p><small>Own % of song revenue</small></p>
+                            </div>
+                            
+                            <div style="padding: 15px; background: rgba(255, 255, 255, 0.1); border-radius: 8px; text-align: center;">
+                                <i class="fas fa-graduation-cap" style="color: var(--primary); font-size: 1.5rem;"></i>
+                                <h6 style="margin-top: 10px;">Credentials</h6>
+                                <p><small>Diplomas, certifications</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="analogy-box">
+                        <h4><i class="fas fa-certificate"></i> The Certificate of Authenticity Analogy</h4>
+                        <p>An NFT is like a certificate of authenticity for a physical collectible, but with superpowers:</p>
+                        
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 15px;">
+                            <div>
+                                <h6 style="color: var(--primary);">Physical Certificate</h6>
+                                <ul style="padding-left: 20px; font-size: 0.9rem;">
+                                    <li>Can be forged</li>
+                                    <li>Hard to transfer</li>
+                                    <li>No automatic royalties</li>
+                                    <li>Stored somewhere safe</li>
+                                    <li>One person verifies</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h6 style="color: var(--secondary);">NFT (Digital Certificate)</h6>
+                                <ul style="padding-left: 20px; font-size: 0.9rem;">
+                                    <li>Cryptographically secured</li>
+                                    <li>Transfer in seconds</li>
+                                    <li>Automatic creator royalties</li>
+                                    <li>Stored on blockchain forever</li>
+                                    <li>Anyone can verify instantly</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="quiz-box">
+                        <h4><i class="fas fa-question-circle"></i> Quick Quiz</h4>
+                        <p>When you buy an NFT, what are you actually buying?</p>
+                        <button class="quiz-btn">
+                            <i class="fas fa-eye"></i>
+                            <span>Show Answer</span>
+                        </button>
+                        <div class="quiz-answer">
+                            <p><strong>Answer:</strong> When you buy an NFT, you're buying a unique token on the blockchain that proves you own that specific digital item. You're NOT necessarily buying the copyright or exclusive rights to the underlying content (unless specified). You're buying the provable scarcity and ownership of that specific tokenized version. Think of it like buying a numbered print from an artist - you own that specific numbered copy, not the rights to reproduce the image.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Topic 2 -->
+            <div class="topic-card">
+                <div class="topic-number">2</div>
+                <h3>Creating, Buying & Selling NFTs</h3>
+                <div class="topic-content">
+                    <div class="story-box">
+                        <div class="story-title"><i class="fas fa-artist"></i> The Digital Artist Success Story</div>
+                        <p>Beeple (Mike Winkelmann) had been creating digital art every day for 13 years (5,000+ pieces).</p>
+                        
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 25px; margin: 25px 0;">
+                            <div style="padding: 20px; background: rgba(231, 76, 60, 0.1); border-radius: 12px;">
+                                <h5 style="color: var(--accent); text-align: center;">Before NFTs</h5>
+                                <div style="text-align: center; margin: 15px 0;">
+                                    <i class="fas fa-times-circle" style="font-size: 3rem; color: var(--accent);"></i>
+                                </div>
+                                <ul style="padding-left: 20px;">
+                                    <li>Sold prints for $100 each</li>
+                                    <li>No secondary market revenue</li>
+                                    <li>Art easily copied/stolen</li>
+                                    <li>Limited audience</li>
+                                    <li>Gallery takes 50% commission</li>
+                                </ul>
+                            </div>
+                            
+                            <div style="padding: 20px; background: rgba(46, 204, 113, 0.1); border-radius: 12px;">
+                                <h5 style="color: var(--success); text-align: center;">After NFTs</h5>
+                                <div style="text-align: center; margin: 15px 0;">
+                                    <i class="fas fa-check-circle" style="font-size: 3rem; color: var(--success);"></i>
+                                </div>
+                                <ul style="padding-left: 20px;">
+                                    <li>"Everydays" NFT sold for $69M</li>
+                                    <li>10% royalty on all resales</li>
+                                    <li>Provable authenticity</li>
+                                    <li>Global market access</li>
+                                    <li>Platform takes 2.5% only</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <p><strong>The impact:</strong> Beeple went from unknown digital artist to third-most-expensive living artist overnight, thanks to NFTs.</p>
+                    </div>
+                    
+                    <div style="background: rgba(86, 97, 246, 0.1); padding: 25px; border-radius: 12px; margin: 25px 0; border: 3px solid #5661f6;">
+                        <h4 style="color: #5661f6;"><i class="fas fa-store"></i> Major NFT Marketplaces</h4>
+                        
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 20px;">
+                            <div style="padding: 20px; background: rgba(255, 255, 255, 0.1); border-radius: 10px;">
+                                <h5 style="color: #5661f6;">OpenSea</h5>
+                                <p><strong>Volume:</strong> $30B+</p>
+                                <p><strong>Fees:</strong> 2.5% per sale</p>
+                                <p><strong>Chain:</strong> Ethereum, Polygon</p>
+                                <p><strong>Special:</strong> Largest marketplace</p>
+                            </div>
+                            
+                            <div style="padding: 20px; background: rgba(255, 255, 255, 0.1); border-radius: 10px;">
+                                <h5 style="color: #000000;">LooksRare</h5>
+                                <p><strong>Volume:</strong> $10B+</p>
+                                <p><strong>Fees:</strong> 2% per sale</p>
+                                <p><strong>Chain:</strong> Ethereum</p>
+                                <p><strong>Special:</strong> Token rewards for trading</p>
+                            </div>
+                            
+                            <div style="padding: 20px; background: rgba(255, 255, 255, 0.1); border-radius: 10px;">
+                                <h5 style="color: #0052ff;">Magic Eden</h5>
+                                <p><strong>Volume:</strong> $3B+</p>
+                                <p><strong>Fees:</strong> 2% per sale</p>
+                                <p><strong>Chain:</strong> Solana</p>
+                                <p><strong>Special:</strong> Solana's #1 marketplace</p>
+                            </div>
+                            
+                            <div style="padding: 20px; background: rgba(255, 255, 255, 0.1); border-radius: 10px;">
+                                <h5 style="color: #ff0052;">Blur</h5>
+                                <p><strong>Volume:</strong> $8B+</p>
+                                <p><strong>Fees:</strong> 0.5% per sale</p>
+                                <p><strong>Chain:</strong> Ethereum</p>
+                                <p><strong>Special:</strong> Pro trader focused</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="key-concept">
+                        <h4><i class="fas fa-road"></i> The NFT Creation Journey</h4>
+                        <p>Creating your first NFT is easier than you think:</p>
+                        
+                        <div style="margin-top: 20px;">
+                            <div style="padding: 15px; background: rgba(52, 152, 219, 0.1); border-radius: 10px; margin-bottom: 15px; border-left: 4px solid var(--primary);">
+                                <strong>Step 1: Create Digital Content</strong><br>
+                                <small>Art, music, video, writing - anything digital!</small>
+                            </div>
+                            
+                            <div style="padding: 15px; background: rgba(52, 152, 219, 0.1); border-radius: 10px; margin-bottom: 15px; border-left: 4px solid var(--primary);">
+                                <strong>Step 2: Set Up Crypto Wallet</strong><br>
+                                <small>MetaMask for Ethereum, Phantom for Solana</small>
+                            </div>
+                            
+                            <div style="padding: 15px; background: rgba(52, 152, 219, 0.1); border-radius: 10px; margin-bottom: 15px; border-left: 4px solid var(--primary);">
+                                <strong>Step 3: Choose Platform & Blockchain</strong><br>
+                                <small>Ethereum (expensive but established) vs Solana (cheap but newer)</small>
+                            </div>
+                            
+                            <div style="padding: 15px; background: rgba(52, 152, 219, 0.1); border-radius: 10px; margin-bottom: 15px; border-left: 4px solid var(--primary);">
+                                <strong>Step 4: Mint Your NFT</strong><br>
+                                <small>Upload file, add description, set royalty percentage (5-10% typical)</small>
+                            </div>
+                            
+                            <div style="padding: 15px; background: rgba(52, 152, 219, 0.1); border-radius: 10px; border-left: 4px solid var(--primary);">
+                                <strong>Step 5: List for Sale</strong><br>
+                                <small>Fixed price or auction, promote on social media</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="analogy-box">
+                        <h4><i class="fas fa-gas-pump"></i> The Gas Fee Problem & Solutions</h4>
+                        <p>Ethereum gas fees made minting NFTs expensive ($50-$300). Solutions emerged:</p>
+                        
+                        <div style="margin-top: 15px;">
+                            <h5 style="color: var(--success);">1. Layer 2 Solutions</h5>
+                            <p><strong>Polygon:</strong> Mint NFTs for $0.01 instead of $50</p>
+                            <p><small>OpenSea supports Polygon NFTs with near-zero fees</small></p>
+                            
+                            <h5 style="color: var(--secondary); margin-top: 15px;">2. Alternative Blockchains</h5>
+                            <p><strong>Solana:</strong> $0.00025 per transaction</p>
+                            <p><small>Magic Eden marketplace for Solana NFTs</small></p>
+                            
+                            <h5 style="color: var(--primary); margin-top: 15px;">3. Lazy Minting</h5>
+                            <p>Only pay gas when NFT sells, not when creating</p>
+                            <p><small>OpenSea's collection manager feature</small></p>
+                        </div>
+                    </div>
+                    
+                    <div style="background: rgba(241, 196, 15, 0.1); padding: 25px; border-radius: 12px; margin: 25px 0; border: 3px solid var(--warning);">
+                        <h4 style="color: var(--warning);"><i class="fas fa-exclamation-triangle"></i> NFT Scams to Avoid</h4>
+                        
+                        <div style="margin-top: 20px;">
+                            <h5 style="color: var(--accent);">1. Fake Marketplace Listings</h5>
+                            <p>Scammers create fake listings of popular NFTs at low prices.</p>
+                            <p><small><strong>Protection:</strong> Always verify contract address and seller reputation</small></p>
+                            
+                            <h5 style="color: var(--accent); margin-top: 15px;">2. Fake Airdrops</h5>
+                            <p>"You received a free NFT!" Links to malicious site.</p>
+                            <p><small><strong>Protection:</strong> Never connect wallet to claim "free" NFTs</small></p>
+                            
+                            <h5 style="color: var(--accent); margin-top: 15px;">3. Rug Pulls</h5>
+                            <p>Projects take money then disappear.</p>
+                            <p><small><strong>Protection:</strong> Research team, roadmap, community before buying</small></p>
+                            
+                            <h5 style="color: var(--accent); margin-top: 15px;">4. Plagiarized Art</h5>
+                            <p>Stolen artwork minted as someone else's NFT.</p>
+                            <p><small><strong>Protection:</strong> Reverse image search, verify creator socials</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Topic 3 -->
+            <div class="topic-card">
+                <div class="topic-number">3</div>
+                <h3>Web3: The Next Generation Internet</h3>
+                <div class="topic-content">
+                    <div class="story-box">
+                        <div class="story-title"><i class="fas fa-history"></i> The Internet Evolution Story</div>
+                        <p>The internet has evolved through three distinct eras:</p>
+                        
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin: 25px 0;">
+                            <div style="padding: 20px; background: rgba(52, 152, 219, 0.1); border-radius: 12px;">
+                                <h5 style="color: var(--primary); text-align: center;">Web 1.0 (1990-2005)</h5>
+                                <div style="text-align: center; margin: 15px 0;">
+                                    <i class="fas fa-book" style="font-size: 2.5rem; color: var(--primary);"></i>
+                                </div>
+                                <ul style="padding-left: 20px;">
+                                    <li><strong>Read-Only</strong></li>
+                                    <li>Static websites</li>
+                                    <li>Company content</li>
+                                    <li>No interaction</li>
+                                    <li>Examples: Britannica Online</li>
+                                </ul>
+                            </div>
+                            
+                            <div style="padding: 20px; background: rgba(155, 89, 182, 0.1); border-radius: 12px;">
+                                <h5 style="color: var(--secondary); text-align: center;">Web 2.0 (2005-2020)</h5>
+                                <div style="text-align: center; margin: 15px 0;">
+                                    <i class="fas fa-edit" style="font-size: 2.5rem; color: var(--secondary);"></i>
+                                </div>
+                                <ul style="padding-left: 20px;">
+                                    <li><strong>Read-Write</strong></li>
+                                    <li>Social media</li>
+                                    <li>User-generated content</li>
+                                    <li>Centralized platforms</li>
+                                    <li>Examples: Facebook, YouTube</li>
+                                </ul>
+                            </div>
+                            
+                            <div style="padding: 20px; background: rgba(46, 204, 113, 0.1); border-radius: 12px;">
+                                <h5 style="color: var(--success); text-align: center;">Web3 (2020+)</h5>
+                                <div style="text-align: center; margin: 15px 0;">
+                                    <i class="fas fa-share-alt" style="font-size: 2.5rem; color: var(--success);"></i>
+                                </div>
+                                <ul style="padding-left: 20px;">
+                                    <li><strong>Read-Write-Own</strong></li>
+                                    <li>Decentralized apps</li>
+                                    <li>User-owned data</li>
+                                    <li>Token economies</li>
+                                    <li>Examples: DeFi, NFTs, DAOs</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <p><strong>The problem with Web 2.0:</strong> You create content, Facebook/Google profits from it, and they own your data.</p>
+                        <p><strong>Web3 solution:</strong> You own your content, data, and identity. You participate in platform governance and revenue.</p>
+                    </div>
+                    
+                    <div class="key-concept">
+                        <h4><i class="fas fa-id-card"></i> Decentralized Identity (DID)</h4>
+                        <p>In Web3, your identity is not tied to Google/Facebook login. It's your crypto wallet.</p>
+                        
+                        <div style="margin-top: 20px;">
+                            <div style="padding: 15px; background: rgba(52, 152, 219, 0.1); border-radius: 10px; margin-bottom: 15px;">
+                                <strong>Traditional Identity (Web 2.0)</strong><br>
+                                <small>Controlled by platforms, siloed, can be banned/deleted</small>
+                            </div>
+                            
+                            <div style="padding: 15px; background: rgba(155, 89, 182, 0.1); border-radius: 10px;">
+                                <strong>Decentralized Identity (Web3)</strong><br>
+                                <small>Your wallet address, portable across apps, censorship-resistant</small>
+                            </div>
+                        </div>
+                        
+                        <div style="margin-top: 20px;">
+                            <h5 style="color: var(--primary);">Your Wallet = Your Identity</h5>
+                            <p>Your Ethereum address (0x...) becomes your universal login across Web3:</p>
+                            <ul style="padding-left: 20px; margin-top: 10px;">
+                                <li>Login to DeFi apps</li>
+                                <li>Prove NFT ownership</li>
+                                <li>Vote in DAOs</li>
+                                <li>Build reputation across platforms</li>
+                                <li>Receive airdrops and rewards</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div style="background: rgba(86, 97, 246, 0.1); padding: 25px; border-radius: 12px; margin: 25px 0; border: 3px solid #5661f6;">
+                        <h4 style="color: #5661f6;"><i class="fas fa-layer-group"></i> The Web3 Tech Stack</h4>
+                        <p>Web3 is built on several key technologies:</p>
+                        
+                        <div style="margin-top: 20px;">
+                            <div style="padding: 15px; background: rgba(255, 255, 255, 0.1); border-radius: 8px; margin-bottom: 10px; border-left: 4px solid #f7931a;">
+                                <strong>1. Blockchain</strong><br>
+                                <small>Foundation layer (Ethereum, Solana, etc.)</small>
+                            </div>
+                            
+                            <div style="padding: 15px; background: rgba(255, 255, 255, 0.1); border-radius: 8px; margin-bottom: 10px; border-left: 4px solid #8c56ff;">
+                                <strong>2. Smart Contracts</strong><br>
+                                <small>Programmable logic (DeFi protocols, NFT contracts)</small>
+                            </div>
+                            
+                            <div style="padding: 15px; background: rgba(255, 255, 255, 0.1); border-radius: 8px; margin-bottom: 10px; border-left: 4px solid #5661f6;">
+                                <strong>3. Decentralized Storage</strong><br>
+                                <small>IPFS, Arweave (store data across network, not centralized servers)</small>
+                            </div>
+                            
+                            <div style="padding: 15px; background: rgba(255, 255, 255, 0.1); border-radius: 8px; margin-bottom: 10px; border-left: 4px solid #00ccbb;">
+                                <strong>4. Oracles</strong><br>
+                                <small>Chainlink (bring real-world data to blockchain)</small>
+                            </div>
+                            
+                            <div style="padding: 15px; background: rgba(255, 255, 255, 0.1); border-radius: 8px; border-left: 4px solid #ff0052;">
+                                <strong>5. Decentralized Domains</strong><br>
+                                <small>ENS (.eth), Unstoppable Domains (.crypto, .x)</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="analogy-box">
+                        <h4><i class="fas fa-city"></i> The City Analogy</h4>
+                        <p>Think of the internet as a city:</p>
+                        
+                        <div style="margin-top: 15px;">
+                            <h5 style="color: var(--primary);">Web 2.0 = Company Towns</h5>
+                            <p>Facebook owns the houses, Google owns the stores, Amazon owns the roads. They make the rules and take most profits.</p>
+                            
+                            <h5 style="color: var(--secondary); margin-top: 15px;">Web3 = Cooperative City</h5>
+                            <p>Residents own their homes (wallets), govern together (DAOs), share infrastructure profits (tokens), and can move freely between neighborhoods (interoperability).</p>
+                        </div>
+                    </div>
+                    
+                    <div class="story-box">
+                        <div class="story-title"><i class="fas fa-address-card"></i> Real Web3 Examples Today</div>
+                        
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 15px;">
+                            <div style="padding: 15px; background: rgba(52, 152, 219, 0.1); border-radius: 10px;">
+                                <h6 style="color: var(--primary);">Decentralized Social Media</h6>
+                                <p><small>Lens Protocol: Own your social graph, move between apps</small></p>
+                            </div>
+                            
+                            <div style="padding: 15px; background: rgba(155, 89, 182, 0.1); border-radius: 10px;">
+                                <h6 style="color: var(--secondary);">Play-to-Earn Games</h6>
+                                <p><small>Axie Infinity: Earn crypto by playing, own in-game assets</small></p>
+                            </div>
+                            
+                            <div style="padding: 15px; background: rgba(46, 204, 113, 0.1); border-radius: 10px;">
+                                <h6 style="color: var(--success);">Creator Economy</h6>
+                                <p><small>Mirror: Writers publish, readers invest, revenue shared via tokens</small></p>
+                            </div>
+                            
+                            <div style="padding: 15px; background: rgba(241, 196, 15, 0.1); border-radius: 10px;">
+                                <h6 style="color: var(--warning);">Decentralized Science</h6>
+                                <p><small>VitaDAO: Community funds longevity research, owns IP via NFTs</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Topic 4 -->
+            <div class="topic-card">
+                <div class="topic-number">4</div>
+                <h3>DAOs: Decentralized Autonomous Organizations</h3>
+                <div class="topic-content">
+                    <div class="story-box">
+                        <div class="story-title"><i class="fas fa-constitution"></i> The ConstitutionDAO Story</div>
+                        <p>In November 2021, a group of internet strangers decided to buy an original copy of the US Constitution at Sotheby's auction.</p>
+                        
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 25px; margin: 25px 0;">
+                            <div style="padding: 20px; background: rgba(52, 152, 219, 0.1); border-radius: 12px;">
+                                <h5 style="color: var(--primary); text-align: center;">The Effort</h5>
+                                <div style="text-align: center; margin: 15px 0;">
+                                    <i class="fas fa-users" style="font-size: 3rem; color: var(--primary);"></i>
+                                </div>
+                                <ul style="padding-left: 20px;">
+                                    <li>17,000+ contributors</li>
+                                    <li>$47 million raised in 7 days</li>
+                                    <li>Average donation: $206</li>
+                                    <li>No central leadership</li>
+                                    <li>Global coordination via Discord</li>
+                                </ul>
+                            </div>
+                            
+                            <div style="padding: 20px; background: rgba(231, 76, 60, 0.1); border-radius: 12px;">
+                                <h5 style="color: var(--accent); text-align: center;">The Result</h5>
+                                <div style="text-align: center; margin: 15px 0;">
+                                    <i class="fas fa-gavel" style="font-size: 3rem; color: var(--accent);"></i>
+                                </div>
+                                <ul style="padding-left: 20px;">
+                                    <li>Lost auction to Ken Griffin ($43.2M bid)</li>
+                                    <li>But proved DAOs can coordinate at scale</li>
+                                    <li>Returned funds to contributors</li>
+                                    <li>Created template for future DAOs</li>
+                                    <li>Showed power of internet-native orgs</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <p><strong>The legacy:</strong> Even in "failure," ConstitutionDAO demonstrated that thousands of strangers can pool resources and make decisions without traditional hierarchy.</p>
+                    </div>
+                    
+                    <div style="background: rgba(46, 204, 113, 0.1); padding: 25px; border-radius: 12px; margin: 25px 0; border: 3px solid var(--success);">
+                        <h4 style="color: var(--success);"><i class="fas fa-sitemap"></i> What is a DAO?</h4>
+                        <p>DAO = Decentralized Autonomous Organization. It's an internet-native organization run by code and governed by token holders.</p>
+                        
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 25px; margin-top: 20px;">
+                            <div style="padding: 20px; background: rgba(255, 255, 255, 0.1); border-radius: 10px;">
+                                <h5 style="color: var(--primary); text-align: center;">Traditional Company</h5>
+                                <ul style="padding-left: 20px; margin-top: 15px;">
+                                    <li>Hierarchical structure</li>
+                                    <li>CEO makes decisions</li>
+                                    <li>Shareholders vote annually</li>
+                                    <li>Legal entity required</li>
+                                    <li>Geographically limited</li>
+                                    <li>Slow decision-making</li>
+                                </ul>
+                            </div>
+                            
+                            <div style="padding: 20px; background: rgba(255, 255, 255, 0.1); border-radius: 10px;">
+                                <h5 style="color: var(--success); text-align: center;">DAO</h5>
+                                <ul style="padding-left: 20px; margin-top: 15px;">
+                                    <li>Flat structure</li>
+                                    <li>Token holders vote on everything</li>
+                                    <li>Continuous voting</li>
+                                    <li>Smart contract entity</li>
+                                    <li>Global from day one</li>
+                                    <li>Fast, automated decisions</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="key-concept">
+                        <h4><i class="fas fa-vote-yea"></i> How DAOs Actually Work</h4>
+                        <p>DAOs combine several Web3 technologies:</p>
+                        
+                        <div style="margin-top: 20px;">
+                            <div style="padding: 15px; background: rgba(52, 152, 219, 0.1); border-radius: 10px; margin-bottom: 15px;">
+                                <strong>1. Treasury Management</strong><br>
+                                <small>Multi-signature wallets (Gnosis Safe) controlled by multiple people</small>
+                            </div>
+                            
+                            <div style="padding: 15px; background: rgba(155, 89, 182, 0.1); border-radius: 10px; margin-bottom: 15px;">
+                                <strong>2. Governance Tokens</strong><br>
+                                <small>Holders vote on proposals (1 token = 1 vote usually)</small>
+                            </div>
+                            
+                            <div style="padding: 15px; background: rgba(46, 204, 113, 0.1); border-radius: 10px; margin-bottom: 15px;">
+                                <strong>3. Voting Platforms</strong><br>
+                                <small>Snapshot (off-chain), Tally (on-chain voting)</small>
+                            </div>
+                            
+                            <div style="padding: 15px; background: rgba(241, 196, 15, 0.1); border-radius: 10px;">
+                                <strong>4. Coordination Tools</strong><br>
+                                <small>Discord, Telegram, Discourse for discussion</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin: 25px 0;">
+                        <div style="padding: 20px; background: rgba(255, 0, 122, 0.1); border-radius: 12px; border: 2px solid #ff007a;">
+                            <h5 style="color: #ff007a;">Uniswap DAO</h5>
+                            <p><strong>Treasury:</strong> $3B+ in UNI tokens</p>
+                            <p><strong>Purpose:</strong> Govern Uniswap protocol</p>
+                            <p><strong>Decisions:</strong> Fee changes, grants, treasury management</p>
+                        </div>
+                        
+                        <div style="padding: 20px; background: rgba(0, 204, 187, 0.1); border-radius: 12px; border: 2px solid #00ccbb;">
+                            <h5 style="color: #00ccbb;">MakerDAO</h5>
+                            <p><strong>Treasury:</strong> $7B+ in assets</p>
+                            <p><strong>Purpose:</strong> Manage DAI stablecoin</p>
+                            <p><strong>Decisions:</strong> Collateral types, stability fees</p>
+                        </div>
+                        
+                        <div style="padding: 20px; background: rgba(86, 97, 246, 0.1); border-radius: 12px; border: 2px solid #5661f6;">
+                            <h5 style="color: #5661f6;">Friends With Benefits</h5>
+                            <p><strong>Treasury:</strong> $10M+</p>
+                            <p><strong>Purpose:</strong> Social DAO for creatives</p>
+                            <p><strong>Decisions:</strong> Events, partnerships, member applications</p>
+                        </div>
+                        
+                        <div style="padding: 20px; background: rgba(247, 147, 26, 0.1); border-radius: 12px; border: 2px solid #f7931a;">
+                            <h5 style="color: #f7931a;">PleasrDAO</h5>
+                            <p><strong>Treasury:</strong> $50M+ in NFTs</p>
+                            <p><strong>Purpose:</strong> Collect culturally significant NFTs</p>
+                            <p><strong>Decisions:</strong> NFT acquisitions, exhibitions</p>
+                        </div>
+                    </div>
+                    
+                    <div class="analogy-box">
+                        <h4><i class="fas fa-democrat"></i> The Country Analogy</h4>
+                        <p>Think of a DAO like a digital country:</p>
+                        <ul style="padding-left: 20px; margin-top: 15px;">
+                            <li><strong>Token Holders</strong> = Citizens with voting rights</li>
+                            <li><strong>Governance Tokens</strong> = Citizenship papers</li>
+                            <li><strong>Treasury</strong> = National treasury/reserves</li>
+                            <li><strong>Proposals</strong> = Legislation/bills</li>
+                            <li><strong>Smart Contracts</strong> = Constitution/laws</li>
+                            <li><strong>Discord/Forum</strong> = Town hall meetings</li>
+                            <li><strong>Contributors</strong> = Government employees</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="quiz-box">
+                        <h4><i class="fas fa-question-circle"></i> Module 7 Quiz</h4>
+                        <p>What's the key difference between buying an NFT and simply right-click-saving the image?</p>
+                        <button class="quiz-btn">
+                            <i class="fas fa-eye"></i>
+                            <span>Show Answer</span>
+                        </button>
+                        <div class="quiz-answer">
+                            <p><strong>Answer:</strong> When you right-click-save an NFT image, you get a copy of the digital file. When you buy the NFT, you're buying the provable ownership of the original on the blockchain. It's like the difference between taking a photo of the Mona Lisa versus owning the actual painting. The NFT gives you:</p>
+                            <ol style="padding-left: 25px; margin-top: 10px;">
+                                <li>Verifiable provenance (history of ownership)</li>
+                                <li>Scarcity (only one owner at a time)</li>
+                                <li>Potential commercial rights (depending on project)</li>
+                                <li>Ability to resell (with royalties to creator)</li>
+                                <li>Community access/privileges (for project-based NFTs)</li>
+                            </ol>
+                            <p style="margin-top: 10px;">Anyone can have a copy, but only one person can own the original authenticated by the blockchain.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+                <span>Show Modules</span>
+            </button>
+
+            <div class="module-nav">
+                <a href="index.html" class="module-btn"><i class="fas fa-home"></i> Home</a>
+                <a href="module1.html" class="module-btn">Module 1</a>
+                <a href="module2.html" class="module-btn">Module 2</a>
+                <a href="module3.html" class="module-btn">Module 3</a>
+                <a href="module4.html" class="module-btn">Module 4</a>
+                <a href="module5.html" class="module-btn">Module 5</a>
+                <a href="module6.html" class="module-btn">Module 6</a>
+                <a href="module7.html" class="module-btn active">Module 7</a>
+                <a href="module8.html" class="module-btn">Module 8</a>
+            </div>
+        </main>
+
+        <div class="navigation">
+            <a href="module6.html" class="nav-btn prev">
+                <i class="fas fa-arrow-left"></i>
+                <span>Previous: DeFi Universe</span>
+            </a>
+            <a href="module8.html" class="nav-btn next">
+                <span>Next: Future & Strategy</span>
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+
+        <footer>
+            <p><i class="fas fa-graduation-cap"></i> <strong>Module 7 Complete!</strong> You now understand NFTs, Web3 & DAOs.</p>
+            <p>© 2026 Mandera Crypto Center | Module 7 of 8 | Next: Final Strategy & Future</p>
+        </footer>
+    </div>
+
+    <script src="script2.js"></script>
+</body>
+</html>
