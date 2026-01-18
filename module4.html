@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 4: Crypto Giants - Mandera Crypto Center</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body class="light-theme">
+    <button id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <div class="container">
+        <header>
+            <div class="theme-toggle">
+                <button class="toggle-btn" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                    <span>Dark Mode</span>
+                </button>
+            </div>
+            
+            <div class="logo-container">
+                <img src="logo.png" alt="Mandera Crypto Center Logo" class="logo-img">
+                <div class="header-text">
+                    <h1><i class="fab fa-bitcoin"></i> Module 4: Crypto Giants</h1>
+                    <p class="tagline">Understanding Bitcoin, Ethereum & Major Players</p>
+                </div>
+            </div>
+            
+            <div class="progress-container">
+                <div class="progress-bar"></div>
+            </div>
+        </header>
+
+        <main>
+            <div class="module-header">
+                <h2><i class="fas fa-crown"></i> Meet The Major Players</h2>
+                <div class="module-meta">
+                    <span><i class="fas fa-book"></i> 4 Essential Topics</span>
+                    <span><i class="fas fa-clock"></i> 55-75 Minutes</span>
+                    <span><i class="fas fa-signal"></i> Intermediate Level</span>
+                </div>
+                <p>Discover the key cryptocurrencies that shape the market. Understand their unique purposes, strengths, and why they matter in the crypto ecosystem.</p>
+                <button class="complete-btn" data-module="4">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Mark as Complete</span>
+                </button>
+            </div>
+
+            <!-- Topic 1 -->
+            <div class="topic-card">
+                <div class="topic-number">1</div>
+                <h3>Bitcoin: The Digital Gold Story</h3>
+                <div class="topic-content">
+                    <div class="story-box">
+                        <div class="story-title"><i class="fas fa-pizza-slice"></i> The $500 Million Pizza Story</div>
+                        <p>On May 22, 2010, programmer Laszlo Hanyecz made history. He paid 10,000 BTC for two Papa John's pizzas worth about $25.</p>
+                        <p style="margin-top: 10px;">Today, those 10,000 BTC would be worth <strong>over $500 million</strong>. This became known as "Bitcoin Pizza Day" and shows Bitcoin's incredible growth from experiment to digital gold.</p>
+                    </div>
+                    
+                    <div class="key-concept">
+                        <h4><i class="fas fa-gem"></i> Bitcoin: Digital Gold</h4>
+                        <p>Think of Bitcoin as digital gold rather than digital cash:</p>
+                        
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 25px; margin: 20px 0;">
+                            <div style="padding: 20px; background: rgba(247, 147, 26, 0.1); border-radius: 12px; border: 3px solid #f7931a;">
+                                <h5 style="color: #f7931a;"><i class="fab fa-bitcoin"></i> Bitcoin</h5>
+                                <ul style="padding-left: 20px; margin-top: 10px;">
+                                    <li><strong>Purpose:</strong> Store of value</li>
+                                    <li><strong>Supply:</strong> 21 million max</li>
+                                    <li><strong>Created:</strong> 2009</li>
+                                    <li><strong>Creator:</strong> Satoshi Nakamoto</li>
+                                    <li><strong>Speed:</strong> ~10 min transactions</li>
+                                    <li><strong>Analogy:</strong> Digital gold bars</li>
+                                </ul>
+                            </div>
+                            <div style="padding: 20px; background: rgba(52, 152, 219, 0.1); border-radius: 12px; border: 3px solid var(--primary);">
+                                <h5 style="color: var(--primary);"><i class="fas fa-gem"></i> Physical Gold</h5>
+                                <ul style="padding-left: 20px; margin-top: 10px;">
+                                    <li><strong>Purpose:</strong> Store of value</li>
+                                    <li><strong>Supply:</strong> Limited (mined)</li>
+                                    <li><strong>History:</strong> 5,000+ years</li>
+                                    <li><strong>Storage:</strong> Vaults required</li>
+                                    <li><strong>Transfer:</strong> Days/weeks</li>
+                                    <li><strong>Analogy:</strong> Physical gold bars</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="analogy-box">
+                        <h4><i class="fas fa-cookie-bite"></i> The Chocolate Chip Cookie Analogy</h4>
+                        <p>Imagine Bitcoin's supply like a giant chocolate chip cookie recipe:</p>
+                        <ul style="padding-left: 20px; margin-top: 15px;">
+                            <li><strong>Total chips:</strong> 21 million chocolate chips (coins)</li>
+                            <li><strong>Recipe:</strong> New chips added every 10 minutes (block time)</li>
+                            <li><strong>Halving:</strong> Every 4 years, recipe uses half the chips (halving event)</li>
+                            <li><strong>Year 2140:</strong> Last chip added, cookie complete</li>
+                            <li><strong>Scarcity:</strong> No one can add more chips than the recipe allows</li>
+                        </ul>
+                    </div>
+                    
+                    <div style="background: rgba(247, 147, 26, 0.1); padding: 25px; border-radius: 12px; margin: 25px 0; border: 3px solid #f7931a;">
+                        <h4 style="color: #f7931a;"><i class="fas fa-chart-line"></i> Bitcoin Halving Events</h4>
+                        <p>Every 210,000 blocks (≈4 years), Bitcoin's block reward halves:</p>
+                        
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-top: 20px;">
+                            <div style="text-align: center; padding: 15px; background: rgba(255, 255, 255, 0.1); border-radius: 8px;">
+                                <strong>2009-2012</strong><br>
+                                50 BTC per block
+                            </div>
+                            <div style="text-align: center; padding: 15px; background: rgba(255, 255, 255, 0.1); border-radius: 8px;">
+                                <strong>2012-2016</strong><br>
+                                25 BTC per block
+                            </div>
+                            <div style="text-align: center; padding: 15px; background: rgba(255, 255, 255, 0.1); border-radius: 8px;">
+                                <strong>2016-2020</strong><br>
+                                12.5 BTC per block
+                            </div>
+                            <div style="text-align: center; padding: 15px; background: rgba(255, 255, 255, 0.1); border-radius: 8px;">
+                                <strong>2020-2024</strong><br>
+                                6.25 BTC per block
+                            </div>
+                            <div style="text-align: center; padding: 15px; background: rgba(255, 255, 255, 0.1); border-radius: 8px;">
+                                <strong>2024-2028</strong><br>
+                                3.125 BTC per block
+                            </div>
+                        </div>
+                        
+                        <p style="margin-top: 15px;"><strong>Why this matters:</strong> Halvings create scarcity, historically leading to price increases as supply decreases while demand grows.</p>
+                    </div>
+                    
+                    <div class="quiz-box">
+                        <h4><i class="fas fa-question-circle"></i> Quick Quiz</h4>
+                        <p>What will happen to Bitcoin mining rewards around the year 2140?</p>
+                        <button class="quiz-btn">
+                            <i class="fas fa-eye"></i>
+                            <span>Show Answer</span>
+                        </button>
+                        <div class="quiz-answer">
+                            <p><strong>Answer:</strong> Around 2140, the last Bitcoin will be mined (block 6,930,000). After that, miners will earn only transaction fees, not block rewards. This is when Bitcoin reaches its maximum supply of 21 million coins.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Topic 2 -->
+            <div class="topic-card">
+                <div class="topic-number">2</div>
+                <h3>Ethereum: The World Computer</h3>
+                <div class="topic-content">
+                    <div class="story-box">
+                        <div class="story-title"><i class="fas fa-baby"></i> The Prodigy Teenager Story</div>
+                        <p>In 2013, a 19-year-old Russian-Canadian programmer named Vitalik Buterin wrote the Ethereum whitepaper. He was frustrated with Bitcoin's limitations and envisioned a blockchain that could do more than just send money.</p>
+                        <p style="margin-top: 10px;">Ethereum launched in 2015 with the idea: "What if blockchain could run programs?" This simple question created the entire DeFi and NFT ecosystems worth hundreds of billions today.</p>
+                    </div>
+                    
+                    <div style="background: rgba(140, 86, 255, 0.1); padding: 25px; border-radius: 12px; margin: 25px 0; border: 3px solid #8c56ff;">
+                        <h4 style="color: #8c56ff;"><i class="fab fa-ethereum"></i> Ethereum vs Bitcoin: The Car Analogy</h4>
+                        
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 25px; margin-top: 20px;">
+                            <div style="padding: 20px; background: rgba(247, 147, 26, 0.1); border-radius: 12px;">
+                                <h5 style="color: #f7931a; text-align: center;"><i class="fas fa-car"></i> Bitcoin</h5>
+                                <p style="text-align: center; margin-top: 10px;"><strong>A reliable sedan</strong></p>
+                                <ul style="padding-left: 20px; margin-top: 15px;">
+                                    <li>Good for one thing: transportation (payments)</li>
+                                    <li>Very reliable and secure</li>
+                                    <li>Not very customizable</li>
+                                    <li>Slow but steady</li>
+                                    <li>Purpose-built</li>
+                                </ul>
+                            </div>
+                            
+                            <div style="padding: 20px; background: rgba(140, 86, 255, 0.1); border-radius: 12px;">
+                                <h5 style="color: #8c56ff; text-align: center;"><i class="fas fa-truck-monster"></i> Ethereum</h5>
+                                <p style="text-align: center; margin-top: 10px;"><strong>A Swiss Army truck</strong></p>
+                                <ul style="padding-left: 20px; margin-top: 15px;">
+                                    <li>Can do many things (DeFi, NFTs, apps)</li>
+                                    <li>Customizable with add-ons</li>
+                                    <li>More complex but versatile</li>
+                                    <li>Constantly upgrading</li>
+                                    <li>Platform for innovation</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="key-concept">
+                        <h4><i class="fas fa-gas-pump"></i> Understanding Gas Fees</h4>
+                        <p>On Ethereum, every operation costs "gas" - think of it as computational fuel:</p>
+                        
+                        <div style="margin-top: 20px;">
+                            <div style="padding: 15px; background: rgba(140, 86, 255, 0.1); border-radius: 10px; margin-bottom: 10px;">
+                                <strong>Simple transfer:</strong> 21,000 gas units
+                                <br><small>Sending ETH from A to B</small>
+                            </div>
+                            <div style="padding: 15px; background: rgba(140, 86, 255, 0.1); border-radius: 10px; margin-bottom: 10px;">
+                                <strong>Uniswap trade:</strong> 150,000-200,000 gas units
+                                <br><small>Swapping tokens on DEX</small>
+                            </div>
+                            <div style="padding: 15px; background: rgba(140, 86, 255, 0.1); border-radius: 10px;">
+                                <strong>Mint NFT:</strong> 300,000-500,000 gas units
+                                <br><small>Creating new NFT</small>
+                            </div>
+                        </div>
+                        
+                        <div style="margin-top: 20px; padding: 15px; background: rgba(241, 196, 15, 0.1); border-radius: 10px; border-left: 4px solid var(--warning);">
+                            <strong>💡 Gas Fee Calculation:</strong><br>
+                            Transaction Cost = Gas Units Used × Gas Price (in Gwei)
+                            <br><small>Example: 50,000 gas × 100 Gwei = 5,000,000 Gwei = 0.005 ETH</small>
+                        </div>
+                    </div>
+                    
+                    <div class="story-box">
+                        <div class="story-title"><i class="fas fa-sync-alt"></i> The Ethereum 2.0 Upgrade</div>
+                        <p>Ethereum is undergoing its biggest upgrade - moving from Proof of Work to Proof of Stake:</p>
+                        
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 15px;">
+                            <div>
+                                <h6 style="color: #f7931a;">Ethereum 1.0 (Old)</h6>
+                                <ul style="padding-left: 20px; font-size: 0.9rem;">
+                                    <li>Proof of Work</li>
+                                    <li>15-45 transactions/sec</li>
+                                    <li>High energy use</li>
+                                    <li>$5-$100 transaction fees</li>
+                                    <li>Miners secure network</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h6 style="color: #8c56ff;">Ethereum 2.0 (New)</h6>
+                                <ul style="padding-left: 20px; font-size: 0.9rem;">
+                                    <li>Proof of Stake</li>
+                                    <li>100,000+ transactions/sec</li>
+                                    <li>99.95% less energy</li>
+                                    <li>$0.01-$0.10 fees</li>
+                                    <li>Validators secure network</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Topic 3 -->
+            <div class="topic-card">
+                <div class="topic-number">3</div>
+                <h3>Altcoins & Tokens: The Crypto Ecosystem</h3>
+                <div class="topic-content">
+                    <div class="analogy-box">
+                        <h4><i class="fas fa-shopping-mall"></i> The Shopping Mall Analogy</h4>
+                        <p>Think of the crypto world as a giant shopping mall:</p>
+                        <ul style="padding-left: 20px; margin-top: 15px;">
+                            <li><strong>Bitcoin (BTC):</strong> The gold jewelry store (store of value)</li>
+                            <li><strong>Ethereum (ETH):</strong> The entire mall building (platform)</li>
+                            <li><strong>Altcoins:</strong> Individual stores in the mall</li>
+                            <li><strong>Tokens:</strong> Gift cards for specific stores</li>
+                            <li><strong>Stablecoins:</strong> Mall gift cards pegged to cash value</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="key-concept">
+                        <h4><i class="fas fa-tags"></i> Major Altcoin Categories</h4>
+                        
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin: 25px 0;">
+                            <div style="padding: 20px; background: rgba(0, 82, 255, 0.1); border-radius: 12px; border: 2px solid #0052ff;">
+                                <h5 style="color: #0052ff;"><i class="fas fa-exchange-alt"></i> Payment Coins</h5>
+                                <p><strong>Examples:</strong> Litecoin (LTC), Bitcoin Cash (BCH)</p>
+                                <p><small>Purpose: Fast, cheap payments. "Digital silver" to Bitcoin's gold.</small></p>
+                            </div>
+                            
+                            <div style="padding: 20px; background: rgba(0, 204, 187, 0.1); border-radius: 12px; border: 2px solid #00ccbb;">
+                                <h5 style="color: #00ccbb;"><i class="fas fa-project-diagram"></i> Platform Coins</h5>
+                                <p><strong>Examples:</strong> Cardano (ADA), Solana (SOL)</p>
+                                <p><small>Purpose: Smart contract platforms competing with Ethereum.</small></p>
+                            </div>
+                            
+                            <div style="padding: 20px; background: rgba(255, 0, 122, 0.1); border-radius: 12px; border: 2px solid #ff007a;">
+                                <h5 style="color: #ff007a;"><i class="fas fa-user-secret"></i> Privacy Coins</h5>
+                                <p><strong>Examples:</strong> Monero (XMR), Zcash (ZEC)</p>
+                                <p><small>Purpose: Anonymous, untraceable transactions.</small></p>
+                            </div>
+                            
+                            <div style="padding: 20px; background: rgba(22, 199, 132, 0.1); border-radius: 12px; border: 2px solid #16c784;">
+                                <h5 style="color: #16c784;"><i class="fas fa-hashtag"></i> Meme Coins</h5>
+                                <p><strong>Examples:</strong> Dogecoin (DOGE), Shiba Inu (SHIB)</p>
+                                <p><small>Purpose: Community-driven, viral popularity. High risk!</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="background: rgba(52, 152, 219, 0.1); padding: 25px; border-radius: 12px; margin: 25px 0; border: 3px solid var(--primary);">
+                        <h4 style="color: var(--primary);"><i class="fas fa-coins"></i> Coins vs Tokens: What's the Difference?</h4>
+                        
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 25px; margin-top: 20px;">
+                            <div style="padding: 20px; background: rgba(255, 255, 255, 0.1); border-radius: 10px;">
+                                <h5 style="color: var(--success); text-align: center;">Native Coins</h5>
+                                <div style="text-align: center; margin: 15px 0;">
+                                    <i class="fas fa-layer-group" style="font-size: 3rem; color: var(--success);"></i>
+                                </div>
+                                <ul style="padding-left: 20px;">
+                                    <li>Have their own blockchain</li>
+                                    <li>Examples: BTC, ETH, ADA</li>
+                                    <li>Used for fees/transactions</li>
+                                    <li>Like national currencies</li>
+                                    <li>Mined or staked</li>
+                                </ul>
+                            </div>
+                            
+                            <div style="padding: 20px; background: rgba(255, 255, 255, 0.1); border-radius: 10px;">
+                                <h5 style="color: var(--secondary); text-align: center;">Tokens</h5>
+                                <div style="text-align: center; margin: 15px 0;">
+                                    <i class="fas fa-ticket-alt" style="font-size: 3rem; color: var(--secondary);"></i>
+                                </div>
+                                <ul style="padding-left: 20px;">
+                                    <li>Built on existing blockchains</li>
+                                    <li>Examples: UNI, LINK, USDC</li>
+                                    <li>Represent assets/utility</li>
+                                    <li>Like casino chips or tickets</li>
+                                    <li>Created via smart contracts</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="story-box">
+                        <div class="story-title"><i class="fas fa-chart-bar"></i> The Market Cap Story</div>
+                        <p>Not all cryptos are created equal. Market capitalization tells you the size:</p>
+                        
+                        <div style="margin-top: 15px;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--border-color);">
+                                <span>Bitcoin (BTC)</span>
+                                <span style="font-weight: bold; color: var(--success);">~$1 Trillion</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--border-color);">
+                                <span>Ethereum (ETH)</span>
+                                <span style="font-weight: bold; color: var(--primary);">~$400 Billion</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--border-color);">
+                                <span>Top 10 Cryptos</span>
+                                <span style="font-weight: bold;">~$100-300B each</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--border-color);">
+                                <span>Small altcoins</span>
+                                <span style="font-weight: bold; color: var(--warning);">Under $1 Billion</span>
+                            </div>
+                        </div>
+                        
+                        <p style="margin-top: 15px;"><strong>Market Cap = Price × Circulating Supply</strong></p>
+                        <p><small>A coin with 1 billion supply at $1 has same market cap as coin with 100 million supply at $10.</small></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Topic 4 -->
+            <div class="topic-card">
+                <div class="topic-number">4</div>
+                <h3>Stablecoins: Bridge to Traditional Finance</h3>
+                <div class="topic-content">
+                    <div class="story-box">
+                        <div class="story-title"><i class="fas fa-anchor"></i> The Venezuelan Hyperinflation Story</div>
+                        <p>In Venezuela, inflation reached 1,000,000% in 2018. People's life savings became worthless overnight. Then something remarkable happened:</p>
+                        <p style="margin-top: 10px;">Venezuelans started using stablecoins (especially USDT) to preserve their wealth. A teacher making $10/month could save in USDT and actually preserve her purchasing power. Today, Venezuela has one of the highest crypto adoption rates in the world.</p>
+                    </div>
+                    
+                    <div class="key-concept">
+                        <h4><i class="fas fa-balance-scale"></i> What Are Stablecoins?</h4>
+                        <p>Stablecoins are cryptocurrencies pegged to stable assets like the US Dollar. 1 stablecoin ≈ $1.</p>
+                        
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin: 25px 0;">
+                            <div style="padding: 20px; background: rgba(38, 161, 123, 0.1); border-radius: 12px; border: 3px solid #26a17b;">
+                                <h5 style="color: #26a17b;">Tether (USDT)</h5>
+                                <ul style="padding-left: 20px; margin-top: 10px;">
+                                    <li><strong>Market Cap:</strong> $100B+</li>
+                                    <li><strong>Backing:</strong> Cash & equivalents</li>
+                                    <li><strong>Issuer:</strong> Tether Limited</li>
+                                    <li><strong>Use:</strong> Trading, remittances</li>
+                                    <li><strong>Risk:</strong> Centralized, audits</li>
+                                </ul>
+                            </div>
+                            
+                            <div style="padding: 20px; background: rgba(61, 125, 246, 0.1); border-radius: 12px; border: 3px solid #3d7df6;">
+                                <h5 style="color: #3d7df6;">USD Coin (USDC)</h5>
+                                <ul style="padding-left: 20px; margin-top: 10px;">
+                                    <li><strong>Market Cap:</strong> $30B+</li>
+                                    <li><strong>Backing:</strong> Cash & bonds</li>
+                                    <li><strong>Issuers:</strong> Circle & Coinbase</li>
+                                    <li><strong>Use:</strong> DeFi, payments</li>
+                                    <li><strong>Risk:</strong> Monthly audits</li>
+                                </ul>
+                            </div>
+                            
+                            <div style="padding: 20px; background: rgba(246, 189, 61, 0.1); border-radius: 12px; border: 3px solid #f6bd3d;">
+                                <h5 style="color: #f6bd3d;">DAI</h5>
+                                <ul style="padding-left: 20px; margin-top: 10px;">
+                                    <li><strong>Market Cap:</strong> $5B+</li>
+                                    <li><strong>Backing:</strong> Crypto collateral</li>
+                                    <li><strong>Issuer:</strong> MakerDAO (decentralized)</li>
+                                    <li><strong>Use:</strong> DeFi, borrowing</li>
+                                    <li><strong>Risk:</strong> Crypto volatility</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="background: rgba(155, 89, 182, 0.1); padding: 25px; border-radius: 12px; margin: 25px 0; border: 3px solid var(--secondary);">
+                        <h4 style="color: var(--secondary);"><i class="fas fa-university"></i> How Stablecoins Work: Three Models</h4>
+                        
+                        <div style="margin-top: 20px;">
+                            <h5 style="color: var(--primary);">1. Fiat-Collateralized</h5>
+                            <p>For every 1 USDT issued, Tether holds $1 in bank. Simple but requires trust in issuer.</p>
+                            
+                            <h5 style="color: var(--secondary); margin-top: 20px;">2. Crypto-Collateralized</h5>
+                            <p>DAI is backed by ETH deposits worth more than the DAI issued (150%+ collateral). Decentralized but complex.</p>
+                            
+                            <h5 style="color: var(--accent); margin-top: 20px;">3. Algorithmic</h5>
+                            <p>No collateral. Uses algorithms to control supply/demand. Risky (see Terra/LUNA collapse).</p>
+                        </div>
+                    </div>
+                    
+                    <div class="analogy-box">
+                        <h4><i class="fas fa-bridge"></i> The Bridge Analogy</h4>
+                        <p>Stablecoins act as bridges between traditional finance and crypto:</p>
+                        <div style="display: grid; grid-template-columns: 1fr auto 1fr; gap: 20px; align-items: center; margin: 20px 0;">
+                            <div style="text-align: center; padding: 20px; background: rgba(52, 152, 219, 0.1); border-radius: 10px;">
+                                <i class="fas fa-landmark" style="font-size: 2rem; color: var(--primary);"></i>
+                                <h6 style="margin-top: 10px;">Traditional Finance</h6>
+                                <p><small>Bank accounts, stocks, USD</small></p>
+                            </div>
+                            
+                            <div style="text-align: center;">
+                                <i class="fas fa-long-arrow-alt-right" style="font-size: 2rem; color: var(--success);"></i>
+                                <p style="font-size: 0.8rem; margin-top: 5px;">Stablecoins</p>
+                            </div>
+                            
+                            <div style="text-align: center; padding: 20px; background: rgba(155, 89, 182, 0.1); border-radius: 10px;">
+                                <i class="fab fa-bitcoin" style="font-size: 2rem; color: var(--secondary);"></i>
+                                <h6 style="margin-top: 10px;">Crypto World</h6>
+                                <p><small>Bitcoin, DeFi, NFTs</small></p>
+                            </div>
+                        </div>
+                        <p>Without stablecoins, moving between these worlds would be slow and expensive. With stablecoins, it's instant and cheap.</p>
+                    </div>
+                    
+                    <div class="quiz-box">
+                        <h4><i class="fas fa-question-circle"></i> Module 4 Quiz</h4>
+                        <p>Why do people in countries with high inflation use stablecoins instead of their local currency?</p>
+                        <button class="quiz-btn">
+                            <i class="fas fa-eye"></i>
+                            <span>Show Answer</span>
+                        </button>
+                        <div class="quiz-answer">
+                            <p><strong>Answer:</strong> People in high-inflation countries use stablecoins because they maintain a stable value (pegged to USD) while local currency rapidly loses value. For example, if a Venezuelan bolivar loses 50% value in a month, but they hold USDT stablecoins, their purchasing power remains stable. Stablecoins also offer easier cross-border transfers and access to global financial services.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+                <span>Show Modules</span>
+            </button>
+
+            <div class="module-nav">
+                <a href="index.html" class="module-btn"><i class="fas fa-home"></i> Home</a>
+                <a href="module1.html" class="module-btn">Module 1</a>
+                <a href="module2.html" class="module-btn">Module 2</a>
+                <a href="module3.html" class="module-btn">Module 3</a>
+                <a href="module4.html" class="module-btn active">Module 4</a>
+                <a href="module5.html" class="module-btn">Module 5</a>
+                <a href="module6.html" class="module-btn">Module 6</a>
+                <a href="module7.html" class="module-btn">Module 7</a>
+                <a href="module8.html" class="module-btn">Module 8</a>
+            </div>
+        </main>
+
+        <div class="navigation">
+            <a href="module3.html" class="nav-btn prev">
+                <i class="fas fa-arrow-left"></i>
+                <span>Previous: Your Crypto Fortress</span>
+            </a>
+            <a href="module5.html" class="nav-btn next">
+                <span>Next: Hands-On Crypto</span>
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+
+        <footer>
+            <p><i class="fas fa-graduation-cap"></i> <strong>Module 4 Complete!</strong> You now understand major cryptocurrencies.</p>
+            <p>© 2026 Mandera Crypto Center | Module 4 of 8 | Next: Practical Crypto Skills</p>
+        </footer>
+    </div>
+
+    <script src="script2.js"></script>
+</body>
+</html>

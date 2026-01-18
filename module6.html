@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 6: DeFi Universe - Mandera Crypto Center</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body class="light-theme">
+    <button id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <div class="container">
+        <header>
+            <div class="theme-toggle">
+                <button class="toggle-btn" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                    <span>Dark Mode</span>
+                </button>
+            </div>
+            
+            <div class="logo-container">
+                <img src="logo.png" alt="Mandera Crypto Center Logo" class="logo-img">
+                <div class="header-text">
+                    <h1><i class="fas fa-university"></i> Module 6: DeFi Universe</h1>
+                    <p class="tagline">Banking Without Banks - The Decentralized Finance Revolution</p>
+                </div>
+            </div>
+            
+            <div class="progress-container">
+                <div class="progress-bar"></div>
+            </div>
+        </header>
+
+        <main>
+            <div class="module-header">
+                <h2><i class="fas fa-chart-network"></i> Decentralized Finance</h2>
+                <div class="module-meta">
+                    <span><i class="fas fa-book"></i> 4 Essential Topics</span>
+                    <span><i class="fas fa-clock"></i> 65-85 Minutes</span>
+                    <span><i class="fas fa-signal"></i> Advanced Level</span>
+                </div>
+                <p>Welcome to the world of Decentralized Finance - where you can earn interest, borrow, lend, and trade without traditional banks. Discover how DeFi is creating a new financial system open to everyone.</p>
+                <button class="complete-btn" data-module="6">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Mark as Complete</span>
+                </button>
+            </div>
+
+            <!-- Topic 1 -->
+            <div class="topic-card">
+                <div class="topic-number">1</div>
+                <h3>What is DeFi? Banking Without Banks</h3>
+                <div class="topic-content">
+                    <div class="story-box">
+                        <div class="story-title"><i class="fas fa-graduation-cap"></i> The College Student Story</div>
+                        <p>Meet Maria, a college student in Kenya. She needs a $500 loan for textbooks but:</p>
+                        <ul style="padding-left: 20px; margin-top: 15px;">
+                            <li>No bank will give her a loan (no credit history)</li>
+                            <li>Local lenders charge 20% monthly interest</li>
+                            <li>She has $1,000 in crypto savings</li>
+                        </ul>
+                        <p style="margin-top: 15px;">Traditional solution: Go without textbooks or pay predatory rates.</p>
+                        <p><strong>DeFi solution:</strong> Maria uses Aave (a DeFi platform) to borrow $500 against her crypto at 5% annual interest. She keeps earning yield on her collateral while accessing funds instantly!</p>
+                    </div>
+                    
+                    <div style="background: rgba(255, 0, 122, 0.1); padding: 25px; border-radius: 12px; margin: 25px 0; border: 3px solid #ff007a;">
+                        <h4 style="color: #ff007a;"><i class="fas fa-exchange-alt"></i> Traditional Finance vs DeFi</h4>
+                        
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 25px; margin-top: 20px;">
+                            <div style="padding: 20px; background: rgba(52, 152, 219, 0.1); border-radius: 12px;">
+                                <h5 style="color: var(--primary); text-align: center;">Traditional Bank</h5>
+                                <ul style="padding-left: 20px; margin-top: 15px;">
+                                    <li>Open 9-5, weekdays only</li>
+                                    <li>Need SSN/ID documents</li>
+                                    <li>0.01% savings interest</li>
+                                    <li>5-7% loan interest</li>
+                                    <li>3-5 day loan approval</li>
+                                    <li>Can freeze your account</li>
+                                    <li>Serves 30% of world</li>
+                                </ul>
+                            </div>
+                            
+                            <div style="padding: 20px; background: rgba(255, 0, 122, 0.1); border-radius: 12px;">
+                                <h5 style="color: #ff007a; text-align: center;">DeFi Protocol</h5>
+                                <ul style="padding-left: 20px; margin-top: 15px;">
+                                    <li>Open 24/7/365</li>
+                                    <li>Need only crypto wallet</li>
+                                    <li>3-20% savings interest</li>
+                                    <li>2-10% loan interest</li>
+                                    <li>Instant loan approval</li>
+                                    <li>No one can freeze funds</li>
+                                    <li>Serves 100% of world</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="key-concept">
+                        <h4><i class="fas fa-cogs"></i> How DeFi Actually Works</h4>
+                        <p>DeFi replaces banks with smart contracts and liquidity pools:</p>
+                        
+                        <div style="margin-top: 20px;">
+                            <h5 style="color: var(--success);">1. Liquidity Pools</h5>
+                            <p>Users deposit crypto into smart contracts that form trading pairs (like ETH/USDC).</p>
+                            
+                            <h5 style="color: var(--primary); margin-top: 15px;">2. Automated Market Makers (AMMs)</h5>
+                            <p>Algorithm sets prices based on supply/demand in the pool, not order books.</p>
+                            
+                            <h5 style="color: var(--secondary); margin-top: 15px;">3. Yield Generation</h5>
+                            <p>Liquidity providers earn fees from trades happening in their pools.</p>
+                            
+                            <h5 style="color: var(--accent); margin-top: 15px;">4. Over-collateralization</h5>
+                            <p>Borrowers deposit more value than they borrow (e.g., $150 ETH for $100 loan).</p>
+                        </div>
+                    </div>
+                    
+                    <div class="analogy-box">
+                        <h4><i class="fas fa-swimming-pool"></i> The Swimming Pool Analogy</h4>
+                        <p>Think of a DeFi protocol as a community swimming pool:</p>
+                        <ul style="padding-left: 20px; margin-top: 15px;">
+                            <li><strong>Liquidity Providers</strong> = People adding water to the pool</li>
+                            <li><strong>Traders</strong> = People swimming in the pool (pay entry fees)</li>
+                            <li><strong>Pool Tokens</strong> = Receipts showing how much water you contributed</li>
+                            <li><strong>Trading Fees</strong> = Entry fees distributed to water providers</li>
+                            <li><strong>Smart Contract</strong> = The pool rules and automatic fee distribution</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="quiz-box">
+                        <h4><i class="fas fa-question-circle"></i> Quick Quiz</h4>
+                        <p>Why do DeFi platforms often offer higher interest rates than traditional banks?</p>
+                        <button class="quiz-btn">
+                            <i class="fas fa-eye"></i>
+                            <span>Show Answer</span>
+                        </button>
+                        <div class="quiz-answer">
+                            <p><strong>Answer:</strong> DeFi offers higher rates because: 1) No physical branches or employees to pay, 2) Automated smart contracts reduce operational costs, 3) Revenue from trading fees is distributed to users, 4) Global access creates larger capital pools, and 5) Higher risk tolerance due to crypto-native nature.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Topic 2 -->
+            <div class="topic-card">
+                <div class="topic-number">2</div>
+                <h3>Yield Farming & Staking: Earning Passive Income</h3>
+                <div class="topic-content">
+                    <div class="story-box">
+                        <div class="story-title"><i class="fas fa-tractor"></i> The Digital Farmer Story</div>
+                        <p>Meet Carlos, a retired teacher from Brazil. He discovered yield farming:</p>
+                        <ul style="padding-left: 20px; margin-top: 15px;">
+                            <li><strong>March 2021:</strong> Deposited $10,000 USDC into a DeFi pool</li>
+                            <li><strong>Strategy:</strong> Provided liquidity for USDC/DAI pair on Curve</li>
+                            <li><strong>Yield:</strong> Earned 15% APY + CRV governance tokens</li>
+                            <li><strong>Result:</strong> After 1 year: $11,500 in value + $800 in CRV tokens</li>
+                            <li><strong>Comparison:</strong> Brazilian savings account: 2% APY = $200/year</li>
+                        </ul>
+                        <p style="margin-top: 15px;">Carlos now earns more from DeFi than his teacher pension!</p>
+                    </div>
+                    
+                    <div class="key-concept">
+                        <h4><i class="fas fa-seedling"></i> Understanding Yield Farming</h4>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin: 25px 0;">
+                            <div style="padding: 20px; background: rgba(46, 204, 113, 0.1); border-radius: 12px; border: 2px solid var(--success);">
+                                <h5 style="color: var(--success);">Staking</h5>
+                                <p><strong>Simple version:</strong> Lock coins to secure network</p>
+                                <p><small>Examples: ETH 2.0, ADA, SOL staking</small></p>
+                                <p><strong>APY:</strong> 3-10%</p>
+                                <p><strong>Risk:</strong> Low-medium</p>
+                            </div>
+                            
+                            <div style="padding: 20px; background: rgba(241, 196, 15, 0.1); border-radius: 12px; border: 2px solid var(--warning);">
+                                <h5 style="color: var(--warning);">Liquidity Providing</h5>
+                                <p><strong>Medium level:</strong> Provide trading pairs on DEX</p>
+                                <p><small>Examples: Uniswap, SushiSwap pools</small></p>
+                                <p><strong>APY:</strong> 10-50%</p>
+                                <p><strong>Risk:</strong> Medium-high</p>
+                            </div>
+                            
+                            <div style="padding: 20px; background: rgba(231, 76, 60, 0.1); border-radius: 12px; border: 2px solid var(--accent);">
+                                <h5 style="color: var(--accent);">Yield Farming</h5>
+                                <p><strong>Advanced:</strong> Chase highest yields across protocols</p>
+                                <p><small>Examples: Compound, Aave, Yearn</small></p>
+                                <p><strong>APY:</strong> 50-1000%+</p>
+                                <p><strong>Risk:</strong> Very high</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="background: rgba(46, 204, 113, 0.1); padding: 25px; border-radius: 12px; margin: 25px 0; border: 3px solid var(--success);">
+                        <h4 style="color: var(--success);"><i class="fas fa-exclamation-triangle"></i> The Impermanent Loss Danger</h4>
+                        <p><strong>Impermanent Loss:</strong> The biggest risk for liquidity providers!</p>
+                        
+                        <div class="story-box" style="margin-top: 20px;">
+                            <div class="story-title"><i class="fas fa-chart-line-down"></i> The ETH/USDC Pool Example</div>
+                            <p>You deposit 1 ETH ($2,000) + $2,000 USDC into a pool (total $4,000).</p>
+                            
+                            <div style="margin-top: 15px;">
+                                <p><strong>Scenario 1: ETH price doubles</strong></p>
+                                <ul style="padding-left: 20px;">
+                                    <li>ETH goes to $4,000</li>
+                                    <li>If you just held: Your 1 ETH + $2,000 USDC = $6,000</li>
+                                    <li>In pool: You get less ETH, more USDC ≈ $5,656</li>
+                                    <li><strong>Impermanent Loss:</strong> $6,000 - $5,656 = $344 loss</li>
+                                </ul>
+                            </div>
+                            
+                            <div style="margin-top: 15px;">
+                                <p><strong>When it's worth it:</strong> If trading fees earned > Impermanent Loss</p>
+                                <p><small>Example: You lose $344 from IL but earn $500 in fees = $156 profit</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="analogy-box">
+                        <h4><i class="fas fa-balance-scale"></i> The Ice Cream Shop Analogy</h4>
+                        <p>Imagine you and a friend open an ice cream shop:</p>
+                        <ul style="padding-left: 20px; margin-top: 15px;">
+                            <li><strong>You contribute:</strong> 50 chocolate + 50 vanilla tubs</li>
+                            <li><strong>Customers trade:</strong> Chocolate for vanilla, vice versa</li>
+                            <li><strong>Price changes:</strong> Chocolate becomes more popular</li>
+                            <li><strong>Result:</strong> You end with 40 chocolate, 60 vanilla tubs</li>
+                            <li><strong>Impermanent Loss:</strong> If chocolate price doubled, your 50 tubs would be worth more than current 40+60 mix</li>
+                        </ul>
+                        <p style="margin-top: 15px;">But if you earned enough from sales, it's still profitable!</p>
+                    </div>
+                    
+                    <div class="key-concept">
+                        <h4><i class="fas fa-shield-alt"></i> Safe Yield Farming Strategies</h4>
+                        <ol style="padding-left: 25px; margin-top: 15px;">
+                            <li><strong>Stablecoin Pairs Only</strong> - USDC/DAI has near-zero impermanent loss</li>
+                            <li><strong>Use Established Protocols</strong> - Aave, Compound, Uniswap (audited)</li>
+                            <li><strong>Start Small</strong> - Test with $100 before committing more</li>
+                            <li><strong>Diversify</strong> - Spread across multiple protocols</li>
+                            <li><strong>Monitor Regularly</strong> - Check positions weekly</li>
+                            <li><strong>Understand the Tokenomics</strong> - Don't farm worthless governance tokens</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Topic 3 -->
+            <div class="topic-card">
+                <div class="topic-number">3</div>
+                <h3>Decentralized Exchanges (DEXs) & Automated Market Makers</h3>
+                <div class="topic-content">
+                    <div class="story-box">
+                        <div class="story-title"><i class="fas fa-history"></i> The Uniswap Creation Story</div>
+                        <p>In 2018, Hayden Adams was a mechanical engineer who lost his job. He taught himself to code and built Uniswap as an experiment.</p>
+                        <p style="margin-top: 10px;"><strong>The problem:</strong> Traditional exchanges (like Coinbase) are centralized, require KYC, and list few tokens.</p>
+                        <p><strong>Uniswap's solution:</strong> Anyone can create a trading pair instantly, no registration needed!</p>
+                        <p style="margin-top: 10px;"><strong>Result:</strong> Uniswap now processes billions in daily volume and made Hayden a crypto billionaire.</p>
+                    </div>
+                    
+                    <div style="background: rgba(255, 0, 82, 0.1); padding: 25px; border-radius: 12px; margin: 25px 0; border: 3px solid #ff0052;">
+                        <h4 style="color: #ff0052;"><i class="fas fa-exchange-alt"></i> CEX vs DEX Comparison</h4>
+                        
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 25px; margin-top: 20px;">
+                            <div style="padding: 20px; background: rgba(52, 152, 219, 0.1); border-radius: 12px;">
+                                <h5 style="color: var(--primary); text-align: center;">Centralized Exchange (CEX)</h5>
+                                <p style="text-align: center;"><small>Coinbase, Binance</small></p>
+                                <ul style="padding-left: 20px; margin-top: 15px;">
+                                    <li>Company controls funds</li>
+                                    <li>Order book matching</li>
+                                    <li>KYC required</li>
+                                    <li>Limited token listings</li>
+                                    <li>Can freeze accounts</li>
+                                    <li>Higher fees (0.1-0.5%)</li>
+                                    <li>Customer support</li>
+                                </ul>
+                            </div>
+                            
+                            <div style="padding: 20px; background: rgba(255, 0, 82, 0.1); border-radius: 12px;">
+                                <h5 style="color: #ff0052; text-align: center;">Decentralized Exchange (DEX)</h5>
+                                <p style="text-align: center;"><small>Uniswap, SushiSwap</small></p>
+                                <ul style="padding-left: 20px; margin-top: 15px;">
+                                    <li>You control funds</li>
+                                    <li>Liquidity pool based</li>
+                                    <li>No KYC needed</li>
+                                    <li>Any token tradable</li>
+                                    <li>No freezing possible</li>
+                                    <li>Lower fees (0.01-0.3%)</li>
+                                    <li>No customer support</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="key-concept">
+                        <h4><i class="fas fa-robot"></i> How Automated Market Makers Work</h4>
+                        <p>DEXs use a simple formula: <strong>x × y = k</strong></p>
+                        
+                        <div style="margin-top: 20px;">
+                            <div style="padding: 15px; background: rgba(52, 152, 219, 0.1); border-radius: 10px; margin-bottom: 15px;">
+                                <strong>x = Amount of Token A in pool</strong><br>
+                                <strong>y = Amount of Token B in pool</strong><br>
+                                <strong>k = Constant (always stays same)</strong>
+                            </div>
+                            
+                            <div class="story-box">
+                                <div class="story-title"><i class="fas fa-calculator"></i> Simple Example: ETH/USDC Pool</div>
+                                <p>Pool has: 100 ETH and 200,000 USDC (k = 20,000,000)</p>
+                                <p style="margin-top: 10px;">You want to buy 1 ETH:</p>
+                                <ol style="padding-left: 25px;">
+                                    <li>New pool: 99 ETH (100-1)</li>
+                                    <li>Calculate needed USDC: k ÷ 99 = 202,020 USDC</li>
+                                    <li>You pay: 202,020 - 200,000 = 2,020 USDC</li>
+                                    <li>Price per ETH: 2,020 USDC</li>
+                                </ol>
+                                <p style="margin-top: 10px;"><strong>Key insight:</strong> Larger trades cause bigger price impact!</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin: 25px 0;">
+                        <div style="padding: 20px; background: rgba(255, 0, 82, 0.1); border-radius: 12px; border: 2px solid #ff0052;">
+                            <h5 style="color: #ff0052;">Uniswap</h5>
+                            <p><strong>Launch:</strong> 2018</p>
+                            <p><strong>Fees:</strong> 0.3% per trade</p>
+                            <p><strong>TVL:</strong> $5B+</p>
+                            <p><strong>Special:</strong> Industry standard, most liquidity</p>
+                        </div>
+                        
+                        <div style="padding: 20px; background: rgba(242, 93, 126, 0.1); border-radius: 12px; border: 2px solid #f25d7e;">
+                            <h5 style="color: #f25d7e;">SushiSwap</h5>
+                            <p><strong>Launch:</strong> 2020</p>
+                            <p><strong>Fees:</strong> 0.25% per trade</p>
+                            <p><strong>TVL:</strong> $500M+</p>
+                            <p><strong>Special:</strong> Yield farming rewards</p>
+                        </div>
+                        
+                        <div style="padding: 20px; background: rgba(0, 204, 187, 0.1); border-radius: 12px; border: 2px solid #00ccbb;">
+                            <h5 style="color: #00ccbb;">Curve Finance</h5>
+                            <p><strong>Launch:</strong> 2020</p>
+                            <p><strong>Fees:</strong> 0.04% per trade</p>
+                            <p><strong>TVL:</strong> $4B+</p>
+                            <p><strong>Special:</strong> Stablecoin swaps only</p>
+                        </div>
+                        
+                        <div style="padding: 20px; background: rgba(0, 82, 255, 0.1); border-radius: 12px; border: 2px solid #0052ff;">
+                            <h5 style="color: #0052ff;">PancakeSwap</h5>
+                            <p><strong>Launch:</strong> 2020</p>
+                            <p><strong>Fees:</strong> 0.2% per trade</p>
+                            <p><strong>TVL:</strong> $2B+</p>
+                            <p><strong>Special:</strong> Runs on Binance Smart Chain</p>
+                        </div>
+                    </div>
+                    
+                    <div class="analogy-box">
+                        <h4><i class="fas fa-store"></i> The Farmers Market vs Supermarket Analogy</h4>
+                        <p><strong>Centralized Exchange (Coinbase)</strong> = Supermarket</p>
+                        <ul style="padding-left: 20px; margin-top: 10px;">
+                            <li>Set hours (9-5 customer support)</li>
+                            <li>Limited selection (curated tokens)</li>
+                            <li>Higher prices (fees)</li>
+                            <li>Can ban customers (freeze accounts)</li>
+                            <li>Requires ID (KYC)</li>
+                        </ul>
+                        
+                        <p style="margin-top: 15px;"><strong>Decentralized Exchange (Uniswap)</strong> = 24/7 Farmers Market</p>
+                        <ul style="padding-left: 20px; margin-top: 10px;">
+                            <li>Open 24/7 (no closing time)</li>
+                            <li>Anyone can set up stall (any token)</li>
+                            <li>Lower prices (fees to farmers)</li>
+                            <li>Can't ban anyone (permissionless)</li>
+                            <li>No ID needed (anonymous)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Topic 4 -->
+            <div class="topic-card">
+                <div class="topic-number">4</div>
+                <h3>Risks, Security & The Future of DeFi</h3>
+                <div class="topic-content">
+                    <div class="story-box">
+                        <div class="story-title"><i class="fas fa-skull-crossbones"></i> The $600 Million Hack Story</div>
+                        <p>In August 2021, Poly Network (a DeFi protocol) was hacked for $600 million - the largest crypto hack in history.</p>
+                        <p style="margin-top: 10px;"><strong>The twist:</strong> The hacker returned ALL the funds days later, calling it "for fun" and to expose vulnerabilities.</p>
+                        <p><strong>The lesson:</strong> Even with returned funds, this exposed critical DeFi risks:</p>
+                        <ul style="padding-left: 20px; margin-top: 10px;">
+                            <li>Smart contract vulnerabilities</li>
+                            <li>Centralized components in "decentralized" systems</li>
+                            <li>Speed of innovation outpacing security</li>
+                        </ul>
+                    </div>
+                    
+                    <div style="background: rgba(231, 76, 60, 0.1); padding: 25px; border-radius: 12px; margin: 25px 0; border: 3px solid var(--accent);">
+                        <h4 style="color: var(--accent);"><i class="fas fa-exclamation-triangle"></i> Major DeFi Risks</h4>
+                        
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 20px;">
+                            <div style="padding: 15px; background: rgba(255, 255, 255, 0.1); border-radius: 8px;">
+                                <h6 style="color: var(--accent);">Smart Contract Risk</h6>
+                                <p><small>Bugs in code can drain funds. Always use audited protocols.</small></p>
+                            </div>
+                            
+                            <div style="padding: 15px; background: rgba(255, 255, 255, 0.1); border-radius: 8px;">
+                                <h6 style="color: var(--warning);">Impermanent Loss</h6>
+                                <p><small>Liquidity providers can lose vs holding assets.</small></p>
+                            </div>
+                            
+                            <div style="padding: 15px; background: rgba(255, 255, 255, 0.1); border-radius: 8px;">
+                                <h6 style="color: var(--primary);">Oracle Risk</h6>
+                                <p><small>If price feeds are wrong, protocols make bad decisions.</small></p>
+                            </div>
+                            
+                            <div style="padding: 15px; background: rgba(255, 255, 255, 0.1); border-radius: 8px;">
+                                <h6 style="color: var(--secondary);">Governance Risk</h6>
+                                <p><small>Token holders might vote for bad changes.</small></p>
+                            </div>
+                            
+                            <div style="padding: 15px; background: rgba(255, 255, 255, 0.1); border-radius: 8px;">
+                                <h6 style="color: var(--success);">Regulatory Risk</h6>
+                                <p><small>Governments might ban or restrict DeFi.</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="key-concept">
+                        <h4><i class="fas fa-shield-alt"></i> How to Stay Safe in DeFi</h4>
+                        <ol style="padding-left: 25px; margin-top: 15px;">
+                            <li><strong>Start Small</strong> - Never invest more than you can afford to lose</li>
+                            <li><strong>Use Audited Protocols</strong> - Check for security audits from reputable firms</li>
+                            <li><strong>Enable Transaction Simulation</strong> - Use tools like Tenderly before signing</li>
+                            <li><strong>Revoke Unused Permissions</strong> - Use revoke.cash regularly</li>
+                            <li><strong>Use Hardware Wallet</strong> - Never use exchange wallets for DeFi</li>
+                            <li><strong>Stay Informed</strong> - Follow protocol announcements and security news</li>
+                            <li><strong>Consider Insurance</strong> - Protocols like Nexus Mutual offer coverage</li>
+                        </ol>
+                    </div>
+                    
+                    <div class="story-box">
+                        <div class="story-title"><i class="fas fa-crystal-ball"></i> The Future of DeFi</div>
+                        <p>Where is DeFi headed? Several exciting trends:</p>
+                        
+                        <div style="margin-top: 15px;">
+                            <h5 style="color: var(--primary);">1. Cross-Chain DeFi</h5>
+                            <p>Assets moving seamlessly between Ethereum, Solana, Avalanche, etc.</p>
+                            
+                            <h5 style="color: var(--secondary); margin-top: 15px;">2. Real World Assets (RWA)</h5>
+                            <p>Tokenizing real estate, stocks, bonds on blockchain.</p>
+                            
+                            <h5 style="color: var(--success); margin-top: 15px;">3. Institutional DeFi</h5>
+                            <p>Banks and funds using DeFi for better returns.</p>
+                            
+                            <h5 style="color: var(--warning); margin-top: 15px;">4. SocialFi</h5>
+                            <p>Combining social media with DeFi (creator tokens, social trading).</p>
+                            
+                            <h5 style="color: var(--accent); margin-top: 15px;">5. Regulation & Compliance</h5>
+                            <p>KYC integration while preserving privacy.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="quiz-box">
+                        <h4><i class="fas fa-question-circle"></i> Module 6 Quiz</h4>
+                        <p>What is "impermanent loss" and when does it become permanent?</p>
+                        <button class="quiz-btn">
+                            <i class="fas fa-eye"></i>
+                            <span>Show Answer</span>
+                        </button>
+                        <div class="quiz-answer">
+                            <p><strong>Answer:</strong> Impermanent loss occurs when providing liquidity to a DEX pool and the price ratio of the paired assets changes. You end up with less value than if you had just held the assets separately. It's called "impermanent" because if prices return to their original ratio, the loss disappears. It becomes <strong>permanent</strong> when you withdraw your liquidity from the pool at a different price ratio than when you deposited. The loss is locked in once you exit the position.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+                <span>Show Modules</span>
+            </button>
+
+            <div class="module-nav">
+                <a href="index.html" class="module-btn"><i class="fas fa-home"></i> Home</a>
+                <a href="module1.html" class="module-btn">Module 1</a>
+                <a href="module2.html" class="module-btn">Module 2</a>
+                <a href="module3.html" class="module-btn">Module 3</a>
+                <a href="module4.html" class="module-btn">Module 4</a>
+                <a href="module5.html" class="module-btn">Module 5</a>
+                <a href="module6.html" class="module-btn active">Module 6</a>
+                <a href="module7.html" class="module-btn">Module 7</a>
+                <a href="module8.html" class="module-btn">Module 8</a>
+            </div>
+        </main>
+
+        <div class="navigation">
+            <a href="module5.html" class="nav-btn prev">
+                <i class="fas fa-arrow-left"></i>
+                <span>Previous: Hands-On Crypto</span>
+            </a>
+            <a href="module7.html" class="nav-btn next">
+                <span>Next: NFTs & Web3 World</span>
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+
+        <footer>
+            <p><i class="fas fa-graduation-cap"></i> <strong>Module 6 Complete!</strong> You now understand decentralized finance.</p>
+            <p>© 2026 Mandera Crypto Center | Module 6 of 8 | Next: NFTs & Digital Ownership</p>
+        </footer>
+    </div>
+
+    <script src="script2.js"></script>
+</body>
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 1: The Money Revolution - Mandera Crypto Center</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body class="light-theme">
+    <button id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <div class="container">
+        <header>
+            <div class="theme-toggle">
+                <button class="toggle-btn" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                    <span>Dark Mode</span>
+                </button>
+            </div>
+            
+            <div class="logo-container">
+                <img src="logo.png" alt="Mandera Crypto Center Logo" class="logo-img">
+                <div class="header-text">
+                    <h1><i class="fas fa-money-bill-wave"></i> Module 1: The Money Revolution</h1>
+                    <p class="tagline">Understanding Why Cryptocurrency Exists</p>
+                </div>
+            </div>
+            
+            <div class="progress-container">
+                <div class="progress-bar"></div>
+            </div>
+        </header>
+
+        <main>
+            <div class="module-header">
+                <h2><i class="fas fa-university"></i> Why Cryptocurrency?</h2>
+                <div class="module-meta">
+                    <span><i class="fas fa-book"></i> 4 Essential Topics</span>
+                    <span><i class="fas fa-clock"></i> 45-60 Minutes</span>
+                    <span><i class="fas fa-signal"></i> Foundation Level</span>
+                </div>
+                <p>Before we dive into how cryptocurrency works, let's understand WHY it exists. This module uses real stories to explain the problems with traditional money and how crypto offers revolutionary solutions.</p>
+                <button class="complete-btn" data-module="1">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Mark as Complete</span>
+                </button>
+            </div>
+
+            <!-- Topic 1 -->
+            <div class="topic-card">
+                <div class="topic-number">1</div>
+                <h3>The Cross-Border Payment Story</h3>
+                <div class="topic-content">
+                    <div class="story-box">
+                        <div class="story-title"><i class="fas fa-user-circle"></i> Meet Sarah - A Digital Nomad</div>
+                        <p>Sarah works as a freelance designer in Dubai. Every month, she sends $1,000 to her family in Kenya. Let's compare her two options:</p>
+                    </div>
+                    
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 25px; margin: 25px 0;">
+                        <div style="background: rgba(231, 76, 60, 0.15); padding: 20px; border-radius: 12px; border: 3px solid var(--accent);">
+                            <h4 style="color: var(--accent); text-align: center;"><i class="fas fa-bank"></i> Traditional Bank</h4>
+                            <ul style="padding-left: 20px; margin-top: 15px;">
+                                <li><strong>3-5 business days</strong> to arrive</li>
+                                <li><strong>$150 lost</strong> in fees (15%)</li>
+                                <li>Bank asks: "What's this payment for?"</li>
+                                <li>Hidden exchange rate markups</li>
+                                <li>Only works Monday-Friday, 9-5</li>
+                                <li>Family waits anxiously for days</li>
+                            </ul>
+                        </div>
+                        
+                        <div style="background: rgba(46, 204, 113, 0.15); padding: 20px; border-radius: 12px; border: 3px solid var(--success);">
+                            <h4 style="color: var(--success); text-align: center;"><i class="fas fa-bolt"></i> Cryptocurrency</h4>
+                            <ul style="padding-left: 20px; margin-top: 15px;">
+                                <li><strong>10 minutes</strong> to arrive</li>
+                                <li><strong>$10-$20</strong> in fees (1-2%)</li>
+                                <li>No questions asked</li>
+                                <li>Transparent exchange rate</li>
+                                <li>Works <strong>24/7/365</strong></li>
+                                <li>Family receives money instantly</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="key-concept">
+                        <h4><i class="fas fa-lightbulb"></i> The "Aha!" Moment</h4>
+                        <p>Traditional systems are built on intermediaries (banks, payment processors) who charge fees for their services. Cryptocurrency removes these middlemen through peer-to-peer technology, saving time and money.</p>
+                    </div>
+                    
+                    <div class="quiz-box">
+                        <h4><i class="fas fa-question-circle"></i> Quick Quiz</h4>
+                        <p>Why do traditional cross-border payments take so long?</p>
+                        <button class="quiz-btn">
+                            <i class="fas fa-eye"></i>
+                            <span>Show Answer</span>
+                        </button>
+                        <div class="quiz-answer">
+                            <p><strong>Answer:</strong> Traditional payments pass through multiple banks in different countries, each with their own processing times, regulations, and cut-off times. They work in batches rather than continuously.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Topic 2 -->
+            <div class="topic-card">
+                <div class="topic-number">2</div>
+                <h3>The Double-Spend Problem: Digital Money's Biggest Challenge</h3>
+                <div class="topic-content">
+                    <div class="analogy-box">
+                        <h4><i class="fas fa-copy"></i> The Digital Copy Dilemma</h4>
+                        <p>If I email you a photo, you get a copy and I keep the original. What if money worked this way? I could email you $100, but also keep that same $100 to spend elsewhere.</p>
+                    </div>
+                    
+                    <div class="story-box">
+                        <div class="story-title"><i class="fas fa-gamepad"></i> The Online Game Economy Crash</div>
+                        <p>In 2003, a popular online game had virtual gold coins. Clever players found a way to duplicate these coins. Soon, everyone had billions of coins, items became worthless, and the game's economy collapsed overnight.</p>
+                        <p style="margin-top: 10px;">This is the "double-spend problem" - how to prevent digital money from being copied and spent multiple times.</p>
+                    </div>
+                    
+                    <div style="background: rgba(155, 89, 182, 0.15); padding: 25px; border-radius: 12px; margin: 25px 0; border: 3px solid var(--secondary);">
+                        <h4 style="color: var(--secondary); text-align: center;"><i class="fas fa-question-circle"></i> The Million-Dollar Question</h4>
+                        <p><strong>"How do we create digital money that can't be copied?"</strong></p>
+                        <p style="margin-top: 10px;">For 40 years, computer scientists said: "You need a trusted middleman (like a bank) to verify each transaction."</p>
+                        <p style="margin-top: 10px; font-weight: bold; color: var(--primary);">Bitcoin's breakthrough was solving this WITHOUT needing a trusted middleman.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Topic 3 -->
+            <div class="topic-card">
+                <div class="topic-number">3</div>
+                <h3>The Village Ledger: Understanding Decentralization</h3>
+                <div class="topic-content">
+                    <div class="story-box">
+                        <div class="story-title"><i class="fas fa-users"></i> The Trust Machine</div>
+                        <p>Imagine a village of 100 people. Instead of one bank keeping financial records, everyone keeps an identical ledger. When Sarah pays Tom $10:</p>
+                        <ol style="padding-left: 25px; margin-top: 15px;">
+                            <li>Sarah announces: "I'm paying Tom $10!"</li>
+                            <li>Everyone checks their ledger to see if Sarah has $10</li>
+                            <li>If 51+ villagers agree she has the money, they all update their ledgers</li>
+                            <li>Now everyone's ledger shows Sarah -$10, Tom +$10</li>
+                        </ol>
+                        <p style="margin-top: 15px;">No single person controls the system. If someone tries to cheat (say Sarah claims she paid Tom $100 instead of $10), the other 99 villagers say "that's wrong!"</p>
+                    </div>
+                    
+                    <div class="key-concept">
+                        <h4><i class="fas fa-project-diagram"></i> This is Blockchain!</h4>
+                        <p>Instead of 100 villagers, imagine thousands of computers worldwide keeping identical ledgers. They work together to verify transactions through consensus algorithms. This creates a system that's:</p>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-top: 15px;">
+                            <div style="text-align: center; padding: 15px; background: rgba(52, 152, 219, 0.1); border-radius: 10px;">
+                                <i class="fas fa-shield-alt" style="font-size: 2rem; color: var(--primary);"></i>
+                                <h5 style="margin: 10px 0;">Trustless</h5>
+                                <p>Trust the system, not people</p>
+                            </div>
+                            <div style="text-align: center; padding: 15px; background: rgba(46, 204, 113, 0.1); border-radius: 10px;">
+                                <i class="fas fa-globe" style="font-size: 2rem; color: var(--success);"></i>
+                                <h5 style="margin: 10px 0;">Decentralized</h5>
+                                <p>No single point of failure</p>
+                            </div>
+                            <div style="text-align: center; padding: 15px; background: rgba(155, 89, 182, 0.1); border-radius: 10px;">
+                                <i class="fas fa-eye" style="font-size: 2rem; color: var(--secondary);"></i>
+                                <h5 style="margin: 10px 0;">Transparent</h5>
+                                <p>Anyone can verify transactions</p>
+                            </div>
+                            <div style="text-align: center; padding: 15px; background: rgba(241, 196, 15, 0.1); border-radius: 10px;">
+                                <i class="fas fa-lock" style="font-size: 2rem; color: var(--warning);"></i>
+                                <h5 style="margin: 10px 0;">Immutable</h5>
+                                <p>Can't be changed once recorded</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Topic 4 -->
+            <div class="topic-card">
+                <div class="topic-number">4</div>
+                <h3>Real-World Problems Crypto Solves Today</h3>
+                <div class="topic-content">
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin: 25px 0;">
+                        <div class="story-box">
+                            <h4><i class="fas fa-user-slash"></i> The Unbanked</h4>
+                            <p><strong>Problem:</strong> 1.7 billion people can't open bank accounts due to lack of documents, credit history, or living in remote areas.</p>
+                            <p><strong>Crypto Solution:</strong> All you need is a smartphone. No bank account required.</p>
+                        </div>
+                        
+                        <div class="story-box">
+                            <h4><i class="fas fa-chart-line-down"></i> Hyperinflation</h4>
+                            <p><strong>Problem:</strong> Venezuela's currency lost 99.9% of its value. People's life savings became worthless.</p>
+                            <p><strong>Crypto Solution:</strong> Store value in stable global currencies (stablecoins) that don't inflate.</p>
+                        </div>
+                        
+                        <div class="story-box">
+                            <h4><i class="fas fa-ban"></i> Censorship Resistance</h4>
+                            <p><strong>Problem:</strong> In 2022, Canadian truckers had bank accounts frozen for political protests.</p>
+                            <p><strong>Crypto Solution:</strong> No government or bank can freeze your cryptocurrency wallet.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="analogy-box">
+                        <h4><i class="fas fa-car"></i> The Transportation Analogy</h4>
+                        <p><strong>Traditional Finance:</strong> Like taking a taxi. You're dependent on the driver (bank), pay whatever they charge, go only where they allow, and wait for them to show up.</p>
+                        <p style="margin-top: 10px;"><strong>Cryptocurrency:</strong> Like having your own car. You control where you go, when you go, and pay only for fuel (network fees). No one can tell you where you can or can't drive.</p>
+                    </div>
+                    
+                    <div class="quiz-box">
+                        <h4><i class="fas fa-question-circle"></i> Module 1 Quiz</h4>
+                        <p>What is the main advantage of cryptocurrency over traditional banks for cross-border payments?</p>
+                        <button class="quiz-btn">
+                            <i class="fas fa-eye"></i>
+                            <span>Show Answer</span>
+                        </button>
+                        <div class="quiz-answer">
+                            <p><strong>Answer:</strong> Cryptocurrency enables faster (minutes vs days), cheaper (1-2% vs 10-20% fees), and more accessible (works 24/7, no bank account needed) cross-border payments without intermediaries.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+                <span>Show Modules</span>
+            </button>
+
+            <div class="module-nav">
+                <a href="index.html" class="module-btn"><i class="fas fa-home"></i> Home</a>
+                <a href="module1.html" class="module-btn active">Module 1</a>
+                <a href="module2.html" class="module-btn">Module 2</a>
+                <a href="module3.html" class="module-btn">Module 3</a>
+                <a href="module4.html" class="module-btn">Module 4</a>
+                <a href="module5.html" class="module-btn">Module 5</a>
+                <a href="module6.html" class="module-btn">Module 6</a>
+                <a href="module7.html" class="module-btn">Module 7</a>
+                <a href="module8.html" class="module-btn">Module 8</a>
+            </div>
+        </main>
+
+        <div class="navigation">
+            <a href="index.html" class="nav-btn prev">
+                <i class="fas fa-arrow-left"></i>
+                <span>Back to Home</span>
+            </a>
+            <a href="module2.html" class="nav-btn next">
+                <span>Next: Blockchain Magic</span>
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+
+        <footer>
+            <p><i class="fas fa-graduation-cap"></i> <strong>Module 1 Complete!</strong> You now understand WHY cryptocurrency exists.</p>
+            <p>© 2026 Mandera Crypto Center | Module 1 of 8 | Next: How Blockchain Works</p>
+        </footer>
+    </div>
+
+    <script src="script2.js"></script>
+</body>
+</html>
